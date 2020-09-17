@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Liên hệ</title>
+
+    <link rel="shortcut icon" href="../Image/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVườn Quốc giaK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+      </script>
+    <script src="../js/script.js"></script>
+  </head>
+
+  <body>
+
+    <!-- PHẦN ĐẦU TRANG -->
+    <header id="header">
+      <!-- Phần bên trái header: chứa logo trang -->
+      <section class="hLeft">
+        <div class="hLogo">
+          Trip.vn
+        </div>
+      </section>
+
+      <!-- Phần ở giữa header: chứa thanh menu chính -->
+      <nav class="hNav">
+        <ul class="main-menu container container--row container--center">
+          <li>
+            <a href="../homepage.html" id="home">
+              <i class="fa fa-home"></i>Trang chủ
+            </a>
+          </li>
+          <li>
+            <a href="../html/tourpage.html" id="tour">
+              <i class="fa fa-globe"></i>Tour du lịch<i class="fa fa-angle-double-down"></i>
+            </a>
+            <!-- Menu con của mục Tour du lịch -->
+            <ul class="sub-menu">
+              <li>
+                <a href="../html/tourpage.html#tour_DTMNN">
+                  Đồng Tháp mùa nước nổi
+                </a>
+              </li>
+              <li>
+                <a href="../html/tourpage.html#tour_KPDT">
+                  Khám phá Đồng Tháp
+                </a>
+              </li>
+              <li>
+                <a href="../html/tourpage.html#tour_DTMT">
+                  Đồng Tháp và miền Tây
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../html/hotelpage.html" id="hotel">
+              <i class="fa fa-hotel"></i>Khách sạn<i class="fa fa-angle-double-down"></i>
+            </a>
+            <!-- Menu con của mục Khách sạn -->
+            <ul class="sub-menu">
+              <li>
+                <a href="../html/hotelpage.html#hotel_BongHong">
+                  Khách sạn Bông Hồng
+                </a>
+              </li>
+              <li>
+                <a href="../html/hotelpage.html#hotel_SaoMai">
+                  Khách sạn Sao Mai
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../combo.html" id="combo">
+              <i class="fa fa-barcode"></i></i>Combo đồng giá
+            </a>
+          </li>
+          <li class="activePage">
+            <a href="../html/contactpage.html" id="contact">
+              <i class="fa fa-id-card"></i>Liên hệ
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Phần bên phải header: chứa thanh tìm kiếm -->
+      <section class="hRight">
+        <form action="">
+          <input type="search" name="search" id="search" class="seacrhBar" placeholder="Tìm kiếm">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </section>
+    </header>
+
+
+    <!-- PHẦN NỘI DUNG TRANG -->
+    <main id="main">
+      <section>
+        <section class="content">
+          <h2 class="title">Trung tâm điều hành du lịch Đồng Tháp</h2>
+          <ul>
+            <li>
+              <span><i class="fa fa-map-marker"></i>Địa chỉ: </span>Số 02 Đốc Binh Kiều, Phường 2, TP.Cao Lãnh, Đồng
+              Tháp
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i>Điện thoại: </span><a href="tel:+842773873025">0277.3873.025</a> – <a
+                href="tel:+842773873026">0277.3873.026</a>
+            </li>
+            <li>
+              <span><i class="fa fa-fax"></i>Fax: </span>0277.3855 744
+            </li>
+            <li>
+              <span><i class="fa fa-mobile"></i>Hotline: </span><a href="tel:+84919239383">0919.239.383</a> (Ms Hà)
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i>Email: </span><a
+                href="mailto:ttdhdldongthap@gmail.com">ttdhdldongthap@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+        <section class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.5800806966254!2d105.63299491474608!3d10.454857992540237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65a986278903%3A0xc66149076178d6b1!2zMiDEkOG7kWMgQmluaCBLaeG7gXUsIFBoxrDhu51uZyAyLCBUUC4gQ2FvIEzDo25oLCDEkOG7k25nIFRow6FwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1599137275609!5m2!1svi!2s"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </section>
+      </section>
+
+      <section>
+        <section class="content">
+          <h2 class="title">Khách sạn Sao Mai</h2>
+          <ul>
+            <li>
+              <span><i class="fa fa-map-marker"></i>Địa chỉ: </span>
+              178, Nguyễn Huệ, P2, TP. Cao Lãnh, Đồng Tháp
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i>Điện thoại:</span>
+              <a href="tel:+02776268268">0277.6268.268</a>
+            </li>
+            <li>
+              <span><i class="fa fa-fax"></i>Fax:</span>
+              <a href="tel:+"></a>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i>Email:</span>
+              <a href="mailto:dtsaomaihotel@gmail.com">dtsaomaihotel@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+        <section class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.5490301756336!2d105.63597961474615!3d10.457314992538539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65ab9ce1e4f1%3A0x73e6a47bf3bb40e0!2zMTc4IE5ndXnhu4VuIEh14buHLCBQaMaw4budbmcgMiwgVFAuIENhbyBMw6NuaCwgxJDhu5NuZyBUaMOhcCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1600192055127!5m2!1svi!2s"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </section>
+      </section>
+
+      <section>
+        <section class="content">
+          <h2 class="title">Khách sạn Bông Hồng</h2>
+          <ul>
+            <li>
+              <span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+              251A, Nguyễn Sinh Sắc, P2, TP. Sa Đéc, Đồng Tháp
+              </a>
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i>Điện thoại:</span>
+              <a href="tel:+02773868288">0277.3868.288</a>
+            </li>
+            <li>
+              <span><i class="fa fa-fax"></i>Fax:</span>
+              <a href="tel:+02773868289">0277.3868.289</a>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i>Email:</span>
+              <a href="mailto:bonghonghotelsadec@gmail.com">bonghonghotelsadec@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+        <section class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.643594912644!2d105.76352141474467!3d10.29027369265252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a7e3c392454c7%3A0x1d9caba018f71f7e!2zMjUxIMSQxrDhu51uZyBOZ3V54buFbiBTaW5oIFPhuq9jLCBQaMaw4budbmcgMSwgU2EgxJDDqWMsIMSQ4buTbmcgVGjDoXAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1600192244098!5m2!1svi!2s"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </section>
+      </section>
+
+      <section class="form-feedback">
+        <form>
+          <fieldset>
+            <legend class="subtitle bold">
+              Phản hồi
+            </legend>
+            <label>
+              Họ tên<span class="star">(*)</span>
+            </label>
+            <input type="text" name="fullname" id="fullname" required placeholder="Trương Thị Hồng Nhật">
+            <label>
+              Điện thoại<span class="star">(*)</span>
+            </label>
+            <input type="tel" name="number-phone" id="number-phone" required placeholder="0836479646">
+            <label>
+              Email<span class="star">(*)</span>
+            </label>
+            <input type="email" name="email" id="email" required placeholder="hongnhat1121@gmail.com">
+            <label>
+              Nội dung<span class="star">(*)</span>
+            </label>
+            <textarea name="message" id="message" cols="50" rows="10" required
+              placeholder="Nhập nội dung tại đây..."></textarea>
+            <button type="submit">
+              Gửi<i class="fa fa-paper-plane"></i>
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- PHẦN CHÂN TRANG -->
+    <footer id="footer">
+      <section class="content">
+        <h3 class="subtitle">
+          <a href="../html/contactpage.html" id="contactpage">
+            Trung tâm điều hành du lịch
+          </a>
+        </h3>
+        <div>
+          <ul>
+            <li>
+              <span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+              <a href="https://goo.gl/maps/DGXfekjrAy2urJcc7" target="_blank">
+                04, Đốc Binh Kiều, P2, TP. Cao Lãnh, Đồng Tháp
+              </a>
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i>Điện thoại:</span>
+              <a href="tel:+02773873026">0277.3873.026</a>
+            </li>
+            <li>
+              <span><i class="fa fa-fax"></i>Fax:</span>
+              <a href="tel:+02773855744">0277.3855.744</a>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i>Email:</span>
+              <a href="mailto:ttdhdldongthap@gmail.com">ttdhdldongthap@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content">
+        <h3 class="subtitle">
+          <a href="../html/hotelpage.html#hotel_SaoMai">
+            Khách sạn Sao Mai
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </a>
+        </h3>
+        <div>
+          <ul>
+            <li>
+              <span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+              <a href="https://goo.gl/maps/ATDvbJ3vbtG5mmqd9" target="_blank">
+                178, Nguyễn Huệ, P2, TP. Cao Lãnh, Đồng Tháp
+              </a>
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i>Điện thoại:</span>
+              <a href="tel:+02776268268">0277.6268.268</a>
+            </li>
+            <li>
+              <span><i class="fa fa-fax"></i>Fax:</span>
+              <a href="tel:+"></a>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i>Email:</span>
+              <a href="mailto:dtsaomaihotel@gmail.com">dtsaomaihotel@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content">
+        <h3 class="subtitle">
+          <a href="../html/hotelpage.html#hotel_BongHong">
+            Khách sạn Bông Hồng
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </a>
+        </h3>
+        <div>
+          <ul>
+            <li>
+              <span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+              <a href="https://goo.gl/maps/bXRbLBDyXJe4dPjz9" target="_blank">
+                251A, Nguyễn Sinh Sắc, P2, TP. Sa Đéc, Đồng Tháp
+              </a>
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i>Điện thoại:</span>
+              <a href="tel:+02773868288">0277.3868.288</a>
+            </li>
+            <li>
+              <span><i class="fa fa-fax"></i>Fax:</span>
+              <a href="tel:+02773868289">0277.3868.289</a>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i>Email:</span>
+              <a href="mailto:bonghonghotelsadec@gmail.com">bonghonghotelsadec@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <!-- NÚT TRƯỢT GO TO TOP -->
+    <section class="go-to-top" id="go-to-top">
+      <a href="#">
+        <i class="fa fa-angle-double-up"></i>
+      </a>
+    </section>
+  </body>
+
+</html>

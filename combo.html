@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo đồng giá</title>
+    <link rel="shortcut icon" href="../Image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css1.css" />
+    <link rel="stylesheet" type="text/css" href="slick.css" />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('input[id="submitbtn"]').attr('disabled', true);
+        $('input[id="child"]').on('keyup', function () {
+
+          if ($(this).val() > 1) {
+            $('input[id="submitbtn"]').attr('disabled', false);
+            document.getElementById("submitbtn").value = "Săn Thôi";
+
+          } else {
+            $('input[id="submitbtn"]').attr('disabled', true);
+            document.getElementById("submitbtn").value = "Hãy Nhập hết thong tin";
+
+          }
+
+
+
+        });
+
+
+
+
+
+
+
+      });
+      function check() {
+        ten = document.contact.ten;
+        email = document.contact.email;
+        sdt = document.contact.subject;
+        reg1 = /^[0-9A-Za-z]+[0-9A-Za-z_]*@[\w\d.]+.\w{2,4}$/;
+        testmail = reg1.test(email.value);
+        if (ten.value == "") {
+          alert("Hãy nhập tên");
+          ten.focus();
+          return false;
+        }
+        if (!testmail) {
+          alert("Địa chỉ email không hợp lệ");
+          email.focus();
+          return false;
+        }
+        if (isNaN(sdt.value)) {
+          alert("Số điện thoại chưa chính xác");
+          sdt.focus();
+          return false;
+        }
+        if (sdt.value == "") {
+          alert("chưa nhập sdt");
+          sdt.focus();
+          return false;
+        }
+        else alert('Săn dc ròi nhe ^^');
+        return true;
+
+      }
+      var e2 = document.getElementById("submitbtn"); if (e2 != undefined) { e2.onclick = function () { alert("Thank you"); } }
+
+    </script>
+  </head>
+
+  <body>
+    <div id="top">
+      <a href="homepage.html" style=" text-decoration: none;">Trip.vn</a>
+
+    </div>
+
+    <div id="mid">
+      <form id="contactform" name="contact" method="post" action="#" onsubmit="return check();">
+        <p>
+        <h1 id="nice">NHANH TAY SĂN COMBO ĐỒNG GIÁ !</h1>
+        </p>
+
+        <div class="row">
+          <label>NGƯỜI ĐẶT<span class="req">*</span></label>
+          <input type="text" name="ten" id="name" class="txt" tabindex="1" placeholder="Steve Jobs">
+        </div>
+
+        <div class="row">
+          <label>E-mail <span class="req">*</span></label>
+          <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="address@gmail.com">
+        </div>
+
+        <div class="row">
+          <label>SỐ ĐIỆN THOẠI <span class="req">*</span></label>
+          <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="0939531217">
+        </div>
+        <div class="row">
+          <label>Số Người Đi <span class="req">*</span></label>
+          <input type="number" id="child">
+        </div>
+        <div class="row">
+          <label>LỜI NHẮN<span class="req">*</span></label>
+          <textarea name="message" id="message" class="txtarea" tabindex="4"></textarea>
+        </div>
+
+        <div class="center">
+          <input type="submit" id="submitbtn" name="submitbtn" value="SĂN NGAY ">
+          <input type="reset" id="reset" name="reset" value="NHẬP LẠI">
+
+        </div>
+
+    </div>
+    <div id="foot">
+
+      <div class="tip-combo-item" style="padding-left: 100px;"> <img src="9.png">
+
+        <h2>Trọn gói bao gồm:</h2>
+        <div class="list-text">
+
+          <h3>- Đêm nghỉ tại khách sạn tiêu chuẩn.</h3>
+          <h3>- Vé máy bay khứ hồi kèm theo 7kg hành lý xách tay</h3>
+          <h3>- Phòng không bao gồm bữa sáng.</h3>
+        </div>
+      </div>
+      <div class="tip-combo-item" style="padding-left: 100px;">
+        <img src="8.png">
+        <h2>Phụ thu:</h2>
+        <div class="list-text">
+          <h3>- Phụ thu trẻ em dưới 2 tuổi: 249,000đ.</h3>
+          <h3>- Trẻ em trên 2 tuổi: mua combo như người lớn.</h3>
+        </div>
+      </div>
+      <div class="tip-combo-item" style="padding-left: 100px;">
+        <img src="7.png">
+        <h2>Điều kiện sử dụng:</h2>
+        <div class="list-text">
+          <h3>- Chỉ áp dụng cho khách hàng thanh toán ngay.</h3>
+          <h3>- Combo này không hoàn, hủy trong bất kỳ trường hợp nào.</h3>
+          <h3>- Không áp dụng đồng thời cùng các chương trình khuyến mãi khác.</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,796 @@
+/* CSS tất cả các thẻ */
+
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    
+    /* Font chữ */
+    letter-spacing: 1px;
+    /* Khoảng cách giữa các ký tự */
+    word-spacing: 2px;
+    /* Khoảng cách giữa các từ */
+}
+
+
+/* Font chữ từ Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+body,
+html {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url(../Image/lotus1346x1539.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center center;
+
+}
+
+body>* {
+    padding: 10px;
+    width: 100%;
+    /* 1920px/1920 */
+}
+
+header,
+footer {
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+/* CSS GENERAL */
+
+
+/* Thiết lập kích thước hình ảnh */
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Thiết lập kiểu item của các list */
+
+ul,
+ol {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+
+/* Chuyển con trỏ chuột về hình bàn tay khi hover lên các thành phần */
+
+li,
+a,
+img,
+button,
+input[type="submit"],
+.title,
+.subtitle,
+td,
+th {
+    cursor: pointer;
+}
+
+
+/* Bỏ underline các link, list */
+
+a,
+ul,
+ol {
+    text-decoration: none;
+}
+
+
+/* CSS liên kết */
+
+a:link,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+    color: red;
+}
+
+
+/* CSS icon */
+
+.fa {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.fa-star {
+    color: yellow;
+    padding: 0;
+}
+
+
+/* CSS FORM*/
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+
+fieldset>legend {
+    width: fit-content!important;
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    border: 1px solid grey;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+fieldset>label,
+.tour-info__headerRight table td:first-child {
+    font-weight: bold;
+}
+
+fieldset>button {
+    width: fit-content!important;
+    float: right;
+}
+
+fieldset>* {
+    width: inherit;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+
+/* CSS thẻ input */
+
+input,
+button {
+    padding: 5px;
+}
+
+
+/* CSS định dạng text */
+
+.title {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: blue;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content,
+td {
+    color: yellow;
+    font-size: 18px;
+}
+
+.heading {
+    color: white;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+span.star {
+    color: red;
+}
+
+
+/* CSS ẩn phần text tràn, thay thế bằng dấu 3 chấm */
+
+.nowrap--ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowrap--ellipsis:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+
+/* CSS flexbox */
+
+.container {
+    display: flex;
+}
+
+.container--row {
+    flex-direction: row;
+}
+
+.container--center {
+    justify-content: space-around;
+    /* Phân bố đều các khoảng trống giữa các phần tử trong vùng flexbox */
+    align-items: center;
+    /*Căn giữa theo chiều dọc các phần tử trong vùng flexbox*/
+}
+
+.container--wrap {
+    flex-wrap: wrap;
+}
+
+
+/* CSS PHẦN ĐẦU TRANG*/
+
+header {
+    height: 75px;
+}
+
+.hLeft, .hRight { 
+    width: 15%; 
+}
+.hLogo {
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    font-family: Segoe script !important;
+}
+.hNav {
+    width: 70%;
+}
+
+.main-menu {
+    text-align: center;
+    width: 100%;
+}
+
+.main-menu li {
+    padding: 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.main-menu>li {
+    margin: 10px;
+    padding: 20px;
+    list-style-type: none;
+    position: relative;
+}
+
+
+/* Cắt bớt phần text tràn trong menu con và hiện dấu 3 chấm*/
+.main-menu>li li {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.main-menu a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    text-shadow: grey 3px 2px 3px;
+}
+
+.main-menu li:hover, .main-menu>li.activePage {
+    width: fit-content;
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+
+.main-menu li:hover>a, .main-menu>li.activePage>a {
+    color: black;
+    text-shadow: white 3px 2px 3px;
+}
+
+.sub-menu {
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sub-menu>li {
+    width: 100%;
+    white-space: nowrap;
+    list-style-type: none;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+.hRight>form {
+    display: flex;
+    justify-content: space-around;
+}
+.hRight>form>* {
+    width: 100%;
+}
+
+.hRight button[type="submit"] {
+    display: inline-block;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.hRight button i {
+    padding: 0;
+}
+
+
+/* CSS nút trượt go to top */
+
+.go-to-top {
+    position: fixed;
+    display: inline-block;
+    width: fit-content;
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+.go-to-top>a {
+    display: block;
+    color: white;
+    font-size: 50px;
+    text-shadow: gray 3px 3px 3px;
+}
+
+.go-to-top:hover>a {
+    color: red;
+}
+
+
+
+/* CSS PHẦN CHÂN TRANG */
+
+footer {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer>.content:not(:last-child) {
+    border-right: 1px solid #020f75;
+}
+
+footer>.content>h3>a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer>.content li>span {
+    font-weight: bold;
+    color: black;
+}
+
+footer>.content>div a {
+    color: white;
+}
+
+footer>.content>div a:hover {
+    text-decoration: underline;
+}
+
+
+/* CSS phần thân trang */
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    opacity: 0.9;
+}
+
+
+/* CSS liên quan đến trang tourpage.html */
+
+.tour-list>ul>li {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.tour-list>ul>li:hover {
+    transition: all 1s ease;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.tour-list_num,
+.tour-list_name {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.tour-list_num {
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+    color: red;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.tour-list_name {
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tour-list>ul>li>a:hover span {
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #fcc5e4;
+    }
+    15% {
+        color: #fda34b;
+    }
+    35% {
+        color: #ff7882;
+    }
+    52% {
+        color: #c8699e;
+    }
+    71% {
+        color: #7046aa;
+    }
+    87% {
+        color: #0c1db8;
+    }
+    100% {
+        color: #020f75;
+    }
+}
+
+@keyframes changeColor1 {
+    0% {
+        color:#DFFFCD;
+    }
+    48% {
+        color: #90F9C4;
+    }
+    100% {
+        color: #39F3BB;
+    }
+}
+
+.tour-info,
+.day-tour_content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.tour-info__header {
+    height: 300px;
+}
+
+
+/* Thiết lập độ cao của .tour-info__headerLeft, .tour-info__headerRight */
+
+.tour-info__header>* {
+    height: 100%;
+}
+
+.tour-info__headerLeft {
+    width: 60%;
+}
+
+.multiple-iterms {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+/* Thiết lập độ cao của các thẻ div chứa hình ảnh */
+
+.item {
+    align-items: center;
+    height: 100%;
+}
+
+.item>img {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.tour-info__headerRight {
+    width: 40%;
+}
+
+.input__submit {
+    display: block;
+    margin: 0 auto;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+}
+
+.input__submit:hover {
+    color: blue;
+    box-shadow: 2px 2px 4px 2px grey;
+}
+
+.tour-info__body {
+    margin: 15px 0 10px;
+}
+
+.tab-title>li {
+    list-style-type: none;
+    padding: 15px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tab-title>li:hover {
+    background-color: #c1c161;
+    border-bottom: 5px solid yellow;
+}
+
+.active {
+    background-color: chocolate;
+    border-bottom: 5px solid yellow;
+}
+
+.day-tour_title {
+    color:#00e3ae;
+}
+
+.day-tour_title:hover {
+    animation-name: changeColor1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.day-tour_num {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    color: white;
+}
+
+a.more {
+    font-size: 14px;
+    display: block;
+    border-bottom: 1px dashed gray;
+    text-align: right;
+    padding-top: 0;
+}
+
+a.more:hover {
+    color: yellow;
+}
+
+.day-tour_content>ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.day-tour_content>ul li>div:first-child {
+    font-weight: bold;
+    border-radius: 75% 50% 0 50%;
+    padding: 1vw;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+.day-tour_content>ul li>div:not(:first-child) {
+    border-radius: 10%;
+    margin-left: 5px;
+    padding: 15px;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.day-tour_content>ul li:hover {
+    transition: all 1s ease;
+    transform: scale(1.05);
+    color: blue;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.tour-price>table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    zoom: 1.25;
+}
+
+.tour-price>table>caption {
+    text-align: right;
+    font-size: smaller;
+}
+
+.tour-price>table>*:not(caption) * {
+    border: 1px solid gray;
+}
+
+.tour-price>table th {
+    background-color: lightsalmon;
+}
+
+.tour-price>table td:hover {
+    background-color: lightgoldenrodyellow;
+    opacity: 0.6;
+    color: red;
+}
+
+
+/* CSS liên quan đến trang hotelpage.html */
+
+.hotel-info {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hotel-info>p {
+    font-family: 'Times New Roman', Times, serif!important;
+    letter-spacing: 0;
+    word-spacing: 1px;
+    text-indent: 1cm;
+    text-align: justify;
+}
+
+.list-room-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+figure.room-item {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+    width: 450px;
+    height: 295px;
+}
+
+figure>img {
+    width: 100%;
+    padding: 0;
+    border: 1px solid black;
+}
+
+figcaption.detail-item {
+    position: absolute;
+    bottom: 0;
+    padding: 10% 0px 0px;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 26px;
+    opacity: 0.8;
+    background-color: dimgrey;
+}
+
+figcaption>button:hover {
+    color: red;
+}
+
+
+/* CSS liên quan đến trang liên hệ */
+
+.location {
+    width: 80%;
+}
+
+.location>iframe {
+    width: 100%;
+}
+
+.form-feedback {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 90%;
+}
+
+.location,
+form,
+.content {
+    margin: 0 auto;
+}
+
+.hotel .content>* {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+footer>.content li,
+.tour-list>ul,
+.tour-price>table>caption>ul,
+.contact-info>ul,
+.hotel .content li,
+.hotel .content li {
+    list-style-type: none;
+}
+
+
+/* CSS THANH BÊN */
+
+.asideRight {
+    width: 15%;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    
+}
+
+.asideRight:hover {
+    width: 35%;
+}
+
+.main-menu>li li, .go-to-top>a, .asideRight, .asideRight>form>fieldset {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+
+
+  

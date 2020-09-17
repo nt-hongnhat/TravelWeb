@@ -1,0 +1,4417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Tour du lịch</title>
+
+		<link rel="shortcut icon" href="../Image/logo.png" type="image/x-icon">
+
+		<link rel="stylesheet" href="../css/style.css">
+
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVườn Quốc giaK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+			</script>
+		<script src="../js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css1.css" />
+		<link rel="stylesheet" type="text/css" href="../slick.css" />
+		<link rel="stylesheet" type="text/css" href="../slick-theme.css" />
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="../slick.min.js"></script>
+		<script>
+			$(function () {
+
+
+				$('.single-items').slick({
+
+					dots: true,
+					arrows: false,
+					autoplay: true,
+					autoplaySpeed: 1500,
+				});
+
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<!-- PHẦN ĐẦU TRANG -->
+		<header id="header">
+			<!-- Phần bên trái header: chứa logo trang -->
+			<section class="hLeft">
+				<div class="hLogo">
+					Trip.vn
+				</div>
+			</section>
+
+			<!-- Phần ở giữa header: chứa thanh menu chính -->
+			<nav class="hNav">
+				<ul class="main-menu container container--row container--center">
+					<li>
+						<a href="../homepage.html" id="home">
+							<i class="fa fa-home"></i>Trang chủ
+						</a>
+					</li>
+					<li class="activePage">
+						<a href="../html/tourpage.html" id="tour">
+							<i class="fa fa-globe"></i>Tour du lịch<i class="fa fa-angle-double-down"></i>
+						</a>
+						<!-- Menu con của mục Tour du lịch -->
+						<ul class="sub-menu">
+							<li>
+								<a href="../html/tourpage.html#tour_DTMNN">
+									Đồng Tháp mùa nước nổi
+								</a>
+							</li>
+							<li>
+								<a href="../html/tourpage.html#tour_KPDT">
+									Khám phá Đồng Tháp
+								</a>
+							</li>
+							<li>
+								<a href="../html/tourpage.html#tour_DTMT">
+									Đồng Tháp và miền Tây
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../html/hotelpage.html" id="hotel">
+							<i class="fa fa-hotel"></i>Khách sạn<i class="fa fa-angle-double-down"></i>
+						</a>
+						<!-- Menu con của mục Khách sạn -->
+						<ul class="sub-menu">
+							<li>
+								<a href="../html/hotelpage.html#hotel_BongHong">
+									Khách sạn Bông Hồng
+								</a>
+							</li>
+							<li>
+								<a href="../html/hotelpage.html#hotel_SaoMai">
+									Khách sạn Sao Mai
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../combo.html" id="combo">
+							<i class="fa fa-barcode"></i></i>Combo đồng giá
+						</a>
+					</li>
+					<li>
+						<a href="../html/contactpage.html" id="contact">
+							<i class="fa fa-id-card"></i>Liên hệ
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Phần bên phải header: chứa thanh tìm kiếm -->
+			<section class="hRight">
+				<form action="">
+					<input type="search" name="search" id="search" class="seacrhBar" placeholder="Tìm kiếm">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</section>
+		</header>
+
+		<!-- PHẦN NỘI DUNG TRANG -->
+		<main id="main">
+			<!-- Phần nội dung tour "Đồng Tháp mùa nước nổi" -->
+			<section id="tour_DTMNN">
+				<h2 class="title">Đồng Tháp mùa nước nổi</h2>
+				<div class="tour-list">
+					<ul>
+						<li>
+							<span class=" tour-list_num">Tour 1</span>
+							<a href="#here" id="DTMNN_tour1">
+								<span class="tour-list_name">Khu du lịch sinh thái Gáo Giồng - Vườn Quốc gia Tràm
+									Chim</span>
+							</a>
+						</li>
+						<li>
+							<span class=" tour-list_num">Tour 2</span>
+							<a href="#here" id="DTMNN_tour2">
+								<span class="tour-list_name">Vườn quốc gia Tràm Chim - Làng hoa Sa Đéc</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="DTMNN_tour1" class="tour-info">
+					<div class="tour-info__header container container--center container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_1.png" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_1.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_2.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_13.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_1.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_2.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_1.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_2.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_3.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_4.jpg" alt="Tràm Chim">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Khu du lịch sinh thái Gáo Giồng - Vườn Quốc gia Tràm Chim
+							</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 1.360.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>02 ngày 01 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div>
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Cao Lãnh - Gáo Giồng - Tràm Chim (Ăn trưa,
+											tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV Khám phá Đồng Tháp đón quý khách tại Tp Cao Lãnh đưa đoàn đến
+													tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh Sắc(gồm nhà sàn Bác
+													Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng Hòa An xưa – nơi tái
+													hiện ngôi
+													làng mà Cụ Nguyễn Sinh Sắc từng sống trước đây).</div>
+											</li>
+											<li>
+												<div>10h00</div>
+												<div>Quý khách tiếp tục đến Khu Du lịch Sinh thái Gáo Giồng. Bơi xuồng
+													xuyên rừng tràm, tham quan khu vườn chim thiên nhiên gồm nhiều loại
+													chim như: Cò, Vạt, Trích, Le Le, Điên Điển…Lên đài quan sát ngắm
+													toàn cảnh
+													khu sinh thái với thảm thực vật phong phú như: Tràm, sen, Bông Súng
+													, Năng, Sậy. Tại đây quý khách có thể tham gia chương trình câu cá
+													giải trí, đạp xe đạp… (phí tự túc).
+												</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa tại nhà hàng Gáo Giồng với các món ăn đặc sản Đồng
+													Tháp, nghỉ ngơi thư giản.
+												</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Lên xe di chuyển đi đến Vườn quốc gia Tràm Chim Tam Nông – nơi được
+													công nhận là Khu Ramsar thứ 2.000 của thế giới và thứ 4 của Việt
+													Nam. Sau khi nhận phòng, quý khách tham gia chương trình trải nghiệm
+													làm ngư
+													dân tự tay giăng câu, giăng lưới, đặt lọp, lờ..</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>
+													<div>Dùng cơm chiều với các món đặc sản của mùa nước nổi như cá lóc
+														nướng cuốn lá sen non, ốc hấp tiêu, canh chua cá Linh bông điên
+														điển… nhâm nhi vài ly rượu đế và giao lưu đờn ca tài tử (phí tự
+														túc)
+													</div>
+													<div>Nghỉ đêm tại TT Tràm Chim – huyện Tam Nông.</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Tràm Chim - Tháp Mười (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h00</div>
+												<div>
+													<div>Quý khách dậy sớm ngắm bình minh nơi đồng quê để cảm nhận cuộc
+														sống bình dị vùng sông nước Miền Tây.</div>
+													<div>Bơi xuồng trên cánh đồng nước mênh mông đi thăm câu, lưới, lọp…
+														và tự tay thu gom các sản vật thu hoạch được từ các loại hình
+														trải nghiệm lúc chiều hôm trước</div>
+												</div>
+											</li>
+											<li>
+												<div>07h30</div>
+												<div>Dùng điểm tâm sau đó quý khách trả phòng khách sạn.</div>
+											</li>
+											<li>
+												<div>08h30</div>
+												<div>
+													<div>Đoàn di chuyển xuống tàu tham quan Vườn Quốc Tràm Chim có diện
+														tích tự nhiên 7.612 ha, nơi đây có cảnh quan thiên nhiên tuyệt
+														đẹp, thảm thực vật phong phú với hơn 130 loài khác nhau và cũng
+														chính là nơi
+														cư trú của hàng trăm loài động vật có xương sống, hàng chục loài
+														cá và hơn 198 loài chim nước. Quý khách đi tham quan những cánh
+														đồng Sen, Súng, Lúa ma và ngắm những các đàn chim bay lượn trên
+														không.
+														Quý khách lên đài quan sát ngắm toàn cảnh đồng nước bao la của
+														Vườn Quốc gia.</div>
+													<div>Du khách sẽ có dịp trải nghiệm mùa nước nổi với cảm giác chòng
+														chành khi đi vỏ lãi lướt trên sóng nước xuyên những cánh đồng
+														lúa ma, xuyên rừng tràm, xuyên những cánh đồng Sen… Quý khách
+														như hòa mình vào
+														thiên nhiên hoang dã, thỏa sức ngắm nhìn những sinh cảnh đặc
+														biệt của Tràm Chim.</div>
+												</div>
+											</li>
+											<li>
+												<div>11h00</div>
+												<div>
+													<div>Mua sắm tại chợ Tam Nông với các đặc sản khô cá lóc, khô rắn…
+													</div>
+													<div>Đoàn tiếp tục đến KDL Đồng Sen Tháp Mười dùng cơm trưa với các
+														món ăn đặc sản được chế biến từ sen.</div>
+													<div>Quý khách tham quan và nghỉ ngơi tại KDL.</div>
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Tiếp tục hành trình về Hồ Chí Minh trên tuyến đường N2. Hướng dẫn
+													viên chia tay quý khách. Kết thúc chương trình tham quan.(Chương
+													trình có thể thay đổi trình tự tuỳ theo tình hình tại các điểm tham
+													quan nhưng
+													vẫn đảm bảo đủ chương trình)</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="4">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15 khách</th>
+										<th>20 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn đạt chuẩn</th>
+										<td>1.660.000</td>
+										<td>1.385.000</td>
+										<td>1.400.000</td>
+										<td>1.360.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Phòng nghỉ khách sạn đạt chuẩn tại TT Tràm Chim: 2-3-4 khách/phòng. Trang
+											thiết bị: Máy điều hoà, tivi, tủ lạnh, điện thoại, nước nóng vệ sinh riêng.
+										</li>
+										<li>01 bữa ăn sáng: 01 tô + 01 ly; 03 bữa ăn chính theo chương trình 150.000-
+											180.000đ/suất đặc sản Đồng Tháp (có thực đơn tham khảo kèm theo)</li>
+										<li>Vé tham quan theo chương trình + xuồng ba lá tham quan Gáo Giồng (tàu trung
+											chuyển cho đoàn từ 15 khách – do xe lớn không vào được)</li>
+										<li>Dịch vụ trải nghiệm làm ngư dân, câu cá</li>
+										<li>Tàu vận chuyển tham quan Vườn Quốc gia Tràm Chim</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ</li>
+										<li>Thuế VAT</li>
+										<li>Bảo hiểm du lịch mức bồi thường 10.000.000đ/trường hợp</li>
+										<li>Nón du lịch, khăn ướt, nước suối</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Chi phí ngoài chương trình, nước uống, giặt ủi.…</li>
+										<li>Phí đờn ca tài tử, dịch vụ câu cá</li>
+										<li>Chi phí nghỉ cho tài xế (đoàn dưới 15 khách)</li>
+										<li>Xe vận chuyển tham quan theo chương trình</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="DTMNN_tour2" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_2.png" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_1.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_2.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_3.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_4.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_5.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_6.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_5.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_6.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_7.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_8.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_1.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_2.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_3.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Vườn quốc gia Tràm Chim - Làng hoa Sa Đéc</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 1.135.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>02 ngày 01 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Tham quan Sa Đéc (Ăn trưa, chiều)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>
+													<div>HDV Khám phá Đồng Tháp đón quý khách tại Tp hoa Sa Đéc đưa đi
+														tham quan Nhà Cổ Huỳnh Thủy Lê – Ông là người tình của
+														Marguerite Duras – Mối tình đó được bà viết nên tiểu thuyết và
+														dựng thành phim Người tình(L’Amant)</div>
+													<div>Tham quan Làng hoa kiểng Sa Đéc – Làng hoa Sa Nhiên đây là một
+														trong những làng hoa kiểng lớn nhất Việt Nam. Quý khách chiêm
+														ngưỡng nhiều loại hoa đẹp và kiểng bonsai có tuổi thọ trên 100
+														năm.
+													</div>
+												</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa với các món ăn đặc sản địa phương tại Ngôi Nhà Hoa
+													Ếch. Nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Tiếp tục tham quan KDL cánh đồng HOA HỒNG, diện tích rộng hơn
+													2,5ha, ngoài 6.000 cây hoa hồng với hơn 20 giống khác nhau đang khoe
+													sắc, điểm tham quan du lịch còn đầu tư nhiều cảnh điểm để phục vụ du
+													khách như:
+													Thang vô cực, cánh đồng hoa hướng dương, bến thuyền hoa , cầu tre
+													tàng hình,hồ sen, nhà lá , vó bắt cá, Ngoài ra, nơi đây còn đặc biệt
+													nổi tiếng với tiếc mục mà chắc chắn sẽ khiến quý khách vô cùng mãn
+													nhãn
+													biểu diễn “ Cá Lóc Bay “ rất đặc sắc và được tham quan quy trình
+													chiết xuất nước hoa hồng.
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Đoàn rời Tp Sa Đéc xe tiếp tục đưa đoàn vượt Cầu Cao Lãnh -vừa được
+													khánh thành vào tháng 5.2018- cầu dây văng lớn thứ ba bắc qua Sông
+													Tiền.
+												</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Đến Tp Cao Lãnh Nhận phòng khách sạn, nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều tại nhà hàng Đầm Sen.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Tràm Chim - Tháp Mười (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Dùng điểm tâm sáng, trả phòng khách sạn.</div>
+											</li>
+											<li>
+												<div>07h30</div>
+												<div>Tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh Sắc (gồm nhà sàn Bác
+													Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng Hòa An xưa – nơi tái
+													hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống trước đây).</div>
+											</li>
+											<li>
+												<div>08h30</div>
+												<div>
+													<div>Đoàn khởi hành đi Tam Nông, đến TT Tràm Chim di chuyển xuống
+														tàu tham quan Vườn Quốc Tràm Chim có diện tích tự nhiên 7.612
+														ha, nơi đây có cảnh quan thiên nhiên tuyệt đẹp, thảm thực vật
+														phong phú với hơn
+														130 loài khác nhau và cũng chính là nơi cư trú của hàng trăm
+														loài động vật có xương sống, hàng chục loài cá và hơn 198 loài
+														chim nước. Quý khách đi tham quan những cánh đồng Sen, Súng, Lúa
+														ma và ngắm
+														những các đàn chim bay lượn trên không. Quý khách lên đài quan
+														sát ngắm toàn cảnh đồng nước bao la của Vườn Quốc gia.</div>
+													<div>Du khách sẽ có dịp trải nghiệm mùa nước nổi với cảm giác chòng
+														chành khi đi vỏ lãi lướt trên sóng nước xuyên những cánh đồng
+														lúa ma, xuyên rừng tràm, xuyên những cánh đồng Sen… Quý khách
+														như hòa mình vào
+														thiên nhiên hoang dã, thỏa sức ngắm nhìn những sinh cảnh đặc
+														biệt của Tràm Chim.</div>
+												</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, lẩu chua cá linh bông điên điển, gỏi sầu đâu… …
+													nhâm nhi vài ly rượu đế và giao lưu đờn ca tài tử…
+												</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Mua sắm tại chợ Tam Nông với các đặc sản khô cá lóc, khô rắn…</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Đoàn tiếp tục đến KDL Đồng Sen Tháp Mười tham quan chụp ảnh và
+													thưởng thức các sản phẩm được chế biến từ sen.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Khởi hành về Hồ Chí Minh trên tuyến đường N2. Hướng dẫn viên chia
+													tay quý khách. Kết thúc chương trình tham quan.(Chương trình có thể
+													thay đổi trình tự tuỳ theo tình hình tại các điểm tham quan nhưng
+													vẫn đảm
+													bảo đủ chương trình)</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="4">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15 khách</th>
+										<th>20 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 2 sao</th>
+										<td>1.495.000</td>
+										<td>1.200.000</td>
+										<td>1.165.000</td>
+										<td>1.135.000</td>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>1.555.000 </td>
+										<td>1.260.000</td>
+										<td>1.230.000</td>
+										<td>1.195.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Phòng nghỉ khách sạn đạt chuẩn từ 02- 03 sao tại TT Tp Cao Lãnh: 2-3-4
+											khách/phòng. Trang thiết bị: Máy điều hoà, tivi, tủ lạnh, điện thoại, nước
+											nóng vệ sinh riêng.</li>
+										<li>01 bữa ăn sáng: 01 tô + 01 ly; Tiêu chuẩn 03 sao buffet sáng.</li>
+										<li>03 bữa ăn chính theo chương trình 000-180.000đ/suất ẩm thực đặc sản Đồng
+											Tháp.
+										</li>
+										<li>Vé tham quan theo chương trình, xe điện tại Làng hoa Sa Đéc.</li>
+										<li>Tàu vận chuyển tham quan Vườn Quốc gia Tràm Chim.</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT</li>
+										<li>Bảo hiểm du lịch mức bồi thường 10.000.000đ/trường hợp.</li>
+										<li>Nón du lịch, khăn ướt, nước suối</li>
+									</ul>
+								</section>
+								<div>
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Chi phí ngoài chương trình, nước uống, giặt ủi.…</li>
+										<li>Phí đờn ca tài tử, dịch vụ câu cá</li>
+										<li>Chi phí nghỉ cho tài xế (đoàn dưới 15 khách)</li>
+										<li>Xe vận chuyển tham quan theo chương trình</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Phần nội dung tour "Khám phá Đồng Tháp" -->
+			<section id="tour_KPDT">
+				<h2 class="title">Khám phá Đồng Tháp</h2>
+				<div class="tour-list">
+					<ul>
+						<li>
+							<span class="tour-list_num">Tour 1</span>
+							<a href="#here" id="KPDT_tour1">
+								<span class="tour-list_name">Xẻo Quýt - Lăng cụ Phó bảng Nguyễn Sinh Sắc</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 2</span>
+							<a href="#here" id="KPDT_tour2">
+								<span class="tour-list_name">Làng hoa Sa Đéc - Vườn xoài Mỹ Xương - Vườn trái cây Mỹ
+									Nữ</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 3</span>
+							<a href="#here" id="KPDT_tour3">
+								<span class="tour-list_name">Xẻo Quýt - Gò Tháp - Đồng Sen</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 4</span>
+							<a href="#here" id="KPDT_tour4">
+								<span class="tour-list_name">Lăng cụ Phó bảng Nguyễn Sinh Sắc - Gáo Giồng</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 5</span>
+							<a href="#here" id="KPDT_tour5">
+								<span class="tour-list_name">Vườn Quốc gia Tràm Chim - Đồng Sen</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 6</span>
+							<a href="#here" id="KPDT_tour6">
+								<span class="tour-list_name">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 7</span>
+							<a href="#here" id="KPDT_tour7">
+								<span class="tour-list_name">Xẻo Quýt - Vườn Quốc gia Tràm Chim - Đồng Sen</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 8</span>
+							<a href="#here" id="KPDT_tour8">
+								<span class="tour-list_name">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen - Gáo
+									Giồng - Vườn
+									Quốc
+									gia Tràm Chim</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 9</span>
+							<a href="#here" id="KPDT_tour9">
+								<span class="tour-list_name">Gáo Giồng - Vườn Quốc gia Tràm Chim</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="KPDT_tour1" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/BaotangDongThap/BaotangDongThap_1.png" alt="Bảo tàng Đồng Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/BaotangDongThap/BaotangDongThap_4.jpg" alt="Bảo tàng Đồng Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_3.jpg" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_4.jpg" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_1.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_2.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_3.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_3.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_4.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_4.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_5.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_6.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Xẻo Quýt - Lăng cụ Phó bảng Nguyễn Sinh Sắc</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 275.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>01 ngày</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Xẻo Quýt - Lăng cụ Phó bảng (Ăn trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV Khám phá Đồng Tháp đón quý khách tại ngã ba Mỹ Long (cách ngã 3
+													An Thái Trung 12km) đưa vào tham quan Khu di tích Xẻo Quýt. Tại đây
+													Quý khách được các cô du kích đưa xuồng ba lá đến tham quan các căn
+													hầm
+													bí mật nằm ẩn mình trong khu rừng tràm nguyên sinh – nơi đây từng
+													được chọn quay trong phim Đất Phương Nam. Quý khách có thể tham gia
+													các trò chơi như: bắt vịt, đua xuồng trên sông, giăng lưới bắt cá,
+													dỡ
+													chà cá…(phí tự túc).</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa tại Nhà hàng Xẻo Quýt với các món ăn đặc sản Đồng
+													Tháp Mười. Nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Quý khách tiếp tục đến TP. Cao Lãnh tham quan Khu Di tích Cụ Phó
+													bảng Nguyễn Sinh Sắc(gồm nhà sàn Bác Hồ, Khu mộ Cụ Phó bảng Nguyễn
+													Sinh Sắc và Làng Hòa An xưa – nơi tái hiện ngôi làng mà Cụ Nguyễn
+													Sinh Sắc
+													từng sống trước đây), tham quan Bảo tàng Đồng Tháp (nơi trưng bày di
+													chỉ của nền văn hóa Oc-eo và những sinh hoạt văn hóa đặc trưng của
+													vùng Đồng Bằng Sông Cửu Long).</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Quý khách khởi hành trở về Tp Hồ Chí Minh, trên đường về dừng lại
+													Mỹ Hiệp mua đặc sản Đồng Tháp như xoài Cao Lãnh, nhãn Châu Thành,
+													nem Lai Vung…HDV chia tay quý khách. Kết thúc chương trình tham quan
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+									</tr>
+									<tr>
+										<td>380.000</td>
+										<td>330.000</td>
+										<td>300.000</td>
+										<td>290.000</td>
+										<td>280.000</td>
+										<td>275.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Ăn uống: 01 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương.</li>
+										<li>Vé tham quan theo chương trình, xuồng ba lá tại Xẻo Quýt.</li>
+										<li>Khăn lạnh, nước suối trên đường(1 khăn, 1 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li> Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour2" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_1.jpg" alt="Chùa Lá sen">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_2.png" alt="Chùa Lá sen">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_7.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_8.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_9.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Làng hoa Sa Đéc - Vườn xoài Mỹ Xương - Vườn trái cây Mỹ Nữ
+							</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 290.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>01 ngày</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Làng hoa Sa Đéc - Vườn xoài Mỹ Xương - Vườn trái cây
+											Mỹ Nữ (Ăn
+											trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV Khám phá Đồng Tháp đón quý khách Sa Đéc đưa đoàn vào viếng Chùa
+													Lá Sen (chùa Phước Kiểng), tham quan Nhà Cổ Huỳnh Thủy Lê – Ông là
+													người tình của Marguerite Duras – Mối tình đó được bà viết nên tiểu
+													thuyết
+													và dựng thành phim Người tình(L’Amant). Tham quan Làng hoa kiểng Sa
+													Đéc – Làng hoa Sa Nhiên đây là một trong những làng hoa kiểng lớn
+													nhất Việt Nam. Quý khách chiêm ngưỡng nhiều loại hoa đẹp và kiểng
+													bonsai
+													có tuổi thọ trên 100 năm.</div>
+											</li>
+											<li>
+												<div>11h00</div>
+												<div>Di chuyển đến huyện Cao Lãnh dùng cơm trưa cới các món ăn đặc sản
+													địa phương như: gỏi măng cục, cá chiên xù, gỏi ốc…tại vườn trái cây
+													Mỹ Nữ. Quý khách nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Quý khách tham quan và thưởng thức các loại trái cây tại nhà vườn
+													Mỹ Nữ như: xoài, sầu riêng, măng cục…(trái cây theo mùa),tham quan
+													và tìm hiểu kỷ thuật trồng xoài tại Vườn Xoài Mỹ Xương- tại đây quý
+													khách
+													được thưởng thức các loại xoài được trồng theo tiêu chuẩn VietGAP,
+													GlobalGAP.
+												</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Quý khách khởi hành trở về Tp Hồ Chí Minh, trên đường về dừng lại
+													Mỹ Hiệp mua đặc sản Đồng Tháp như xoài Cao Lãnh, nhãn Châu Thành,
+													nem Lai Vung…HDV chia tay quý khách. Kết thúc chương trình tham quan
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+									</tr>
+									<tr>
+										<td>395.000</td>
+										<td>340.000</td>
+										<td>310.000</td>
+										<td>300.000</td>
+										<td>295.000</td>
+										<td>290.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Ăn uống: 01 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương.</li>
+										<li>Vé tham quan theo chương trình.</li>
+										<li>Khăn lạnh, nước suối trên đường(1 khăn, 1 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li> Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+										<li>Xe honda ôm vào chùa Lá Sen</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour3" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_22.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_4.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_5.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_6.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_3.jpg" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/GoThap/GoThap_1.jpg" alt="Gò Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/GoThap/GoThap_2.jpg" alt="Gò Tháp">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Xẻo Quýt - Gò Tháp - Đồng Sen</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 285.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>01 ngày</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Rừng tràm Xẻo Quýt - Khu di tích Gò Tháp - Khu du
+											lịch Đồng Sen Tháp
+											Mười</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV đón đoàn tại ngã ba Mỹ Long (cách ngã ba An Thái Trung 10km về
+													hướng TP.Cao Lãnh), đưa đến tham quan Khu Di Tích Xẻo Quýt. Tại đây
+													Quý khách được các cô du kích đưa xuồng ba lá đến tham quan các căn
+													hầm
+													bí mật nằm ẩn mình trong khu rừng tràm nguyên sinh – nơi đây từng
+													được chọn quay trong phim Đất Phương Nam. Quý khách có thể tham gia
+													các trò chơi như: bắt vịt, đua xuồng trên sông, giăng lưới bắt cá,
+													dỡ
+													chà cá…(phí tự túc)</div>
+											</li>
+											<li>
+												<div>11h00</div>
+												<div>Dùng cơm trưa tại Nhà hàng Xẻo Quýt với các món ăn đặc sản Đồng
+													Tháp Mười.</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Quý khách lên xe khởi hành đi tham quan Khu Di Tích Gò Tháp được
+													xếp hạng di tích khảo cổ và kiến trúc nghệ thuật Gò Tháp là di tích
+													quốc gia đặc biệt. Tại đây quý khách tham quan Khu mộ táng với những
+													Di chỉ
+													của nền văn hóa Óc eo, Đền thờ ông Thiên Hộ Dương, Đốc Binh Kiều,
+													Miếu Bà Chúa xứ, tham quan KDL Đồng Sen Tháp Mười.</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Quý khởi hành trở về Tp Hồ Chí Minh trên tuyến đường N2, trên đường
+													về dừng chân mua đặc sản Đồng Tháp như xoài Cao Lãnh, hạt sen tươi,
+													gương sen …, HDV chia tay và hẹn gặp lại.Kết thúc chương trình tham
+													quan.
+												</div>
+											</li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th>5-10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+										<th>40 khách</th>
+									</tr>
+									<tr>
+										<td>410.000</td>
+										<td>335.000</td>
+										<td>320.000</td>
+										<td>305.000</td>
+										<td>295.000</td>
+										<td>285.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>01 bữa ăn chính theo chương trình</li>
+										<li>Hướng dẫn viên nhiệt tình, vui vẻ.</li>
+										<li>Vé tham quan, xuồng ba lá tham quan Xẻo Quýt.</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li> Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Chi phí ngoài chương trình.</li>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour4" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/BaotangDongThap/BaotangDongThap_2.jpg" alt="Bảo tàng Đồng Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_3.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_4.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_5.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_15.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_5.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_6.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_14.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Lăng cụ Phó bảng Nguyễn Sinh Sắc - Gáo Giồng</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 350.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>01 ngày</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Lăng cụ Phó bảng Nguyễn Sinh Sắc - Gáo Giồng (Ăn
+											trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV đón đoàn tại Tp Cao Lãnh Quý khách tiếp tục đến Khu Du lịch
+													Sinh thái Gáo Giồng. Bơi xuồng xuyên rừng tràm, tham quan khu vườn
+													chim thiên nhiên gồm nhiều loại chim như: Cò, Vạt, Trích, Le Le,
+													Điên Điển…Lên
+													đài quan sát ngắm toàn cảnh khu sinh thái với thảm thực vật phong
+													phú như: Tràm, sen, Bông Súng , Năng, Sậy. Tại đây quý khách có thể
+													tham gia chương tình tắt mương bắt cá, câu cá giải trí, đạp xe đạp…
+													(phí
+													tự túc).</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món ăn đặc sản Đồng Tháp – thưởng thức chương
+													trình đờn ca tài tử Nam Bộ.
+												</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh Sắc (gồm nhà sàn Bác
+													Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng Hòa An xưa – nơi tái
+													hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống trước đây), tham quan
+													Bảo
+													tàng Đồng Tháp (nơi trưng bày di chỉ của nền văn hóa Óc-eo và những
+													sinh hoạt văn hóa đặc trưng của nền văn hóa Đổng Bằng Sông Cửu
+													Long).
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Quý khách lên xe trở ra Cao Lãnh khởi hành về Tp Hồ Chí Minh, trên
+													đường về dừng lại Mỹ Hiệp mua đặc sản Đồng Tháp như xoài Cao Lãnh,
+													nhãn Châu Thành, nem Lai Vung…Kết thúc chương trình tham quan.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+									</tr>
+									<tr>
+										<td>425.000</td>
+										<td>395.000</td>
+										<td>370.000</td>
+										<td>360.000</td>
+										<td>355.000</td>
+										<td>300.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Ăn uống: 01 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương.</li>
+										<li>Vé tham quan theo chương trình, xuồng ba lá tại Gáo Giồng, tàu trung chuyển
+											vào Gáo Giồng đoàn từ 15 khách.</li>
+										<li>Khăn lạnh, nước suối trên đường(1 khăn, 1 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li> Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour5" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_4.jpg" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/GoThap/GoThap_3.jpg" alt="Gò Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/GoThap/GoThap_4.jpg" alt="Gò Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_9.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_10.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_11.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_12.jpg" alt="Tràm Chim">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Vườn Quốc gia Tràm Chim - Đồng Sen</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 290.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>01 ngày</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Vườn Quốc gia Tràm Chim - Đồng Sen (Ăn trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>
+													<div>HDV đón đoàn tại TT Mỹ An huyện Tháp Mười đưa đoàn đến tham
+														quan Khu Di Tích Gò Tháp được xếp hạng di tích khảo cổ và kiến
+														trúc nghệ thuật Gò Tháp là di tích quốc gia đặc biệt. Tại đây
+														quý khách tham quan
+														Khu mộ táng với những Di chỉ của nền văn hóa Óc eo, Đền thờ ông
+														Thiên Hộ Dương, Đốc Binh Kiều, Miếu Bà Chúa xứ, tham quan KDL
+														Đồng Sen Tháp Mười.</div>
+													<div>Tiếp tục hành trình đi Tam Nông đến Vườn Quốc gia Tràm Chim Tam
+														Nông– đây là Khu Ramsar thứ 2.000 của thế giới và thứ 4 của Việt
+														Nam. Vườn Quốc gia có diện tích tự nhiên 7.612 ha, nơi đây có
+														cảnh quan thiên
+														nhiên tuyệt đẹp, thảm thực vật phong phú với hơn 130 loài khác
+														nhau và cũng chính là nơi cư trú của hàng trăm loài động vật có
+														xương sống, hàng chục loài cá và hơn 198 loài chim nước.
+													</div>
+												</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…và thưởng thức đờn ca tài tử Nam Bộ.
+													Quý khách đi tham quan những cánh đồng Sen, Súng, Lúa ma và ngắm
+													những các
+													đàn chim bay lượn trên không. Quý khách lên đài quan sát ngắm toàn
+													cảnh đồng nước bao la của Vườn Quốc gia.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													khởi hành trở về Tp Hồ Chí Minh, ghé mua sắm tại chợ Tam Nông với
+													các đặc sản khô cá lóc, khô rắn… dừng chân tham quan KDL Đồng Sen
+													Tháp Mười.
+													Hướng dẫn viên chia tay quý khách. Kết thúc chương trình tham quan.
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+									</tr>
+									<tr>
+										<td>545.000</td>
+										<td>400.000</td>
+										<td>390.000</td>
+										<td>370.000</td>
+										<td>360.000</td>
+										<td>350.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Ăn uống: 01 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương.</li>
+										<li>Vé tham quan theo chương trình.</li>
+										<li>Khăn lạnh, nước suối trên đường(1 khăn, 1 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+										<li>Xe honda ôm vào chùa Lá Sen</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour6" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_7.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_8.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_9.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_10.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_11.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_12.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_23.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_24.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_25.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_26.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_27.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_10.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_11.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_12.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/NamPhuongLinhTu/NamPhuongLinhTu_1.jpg" alt="Nam Phương Linh Từ">
+							</div>
+							<div class="item">
+								<img src="../Image/NamPhuongLinhTu/NamPhuongLinhTu_2.jpg" alt="Nam Phương Linh Từ">
+							</div>
+							<div class="item">
+								<img src="../Image/NamPhuongLinhTu/NamPhuongLinhTu_3.jpg" alt="Nam Phương Linh Từ">
+							</div>
+							<div class="item">
+								<img src="../Image/NamPhuongLinhTu/NamPhuongLinhTu_4.jpg" alt="Nam Phương Linh Từ">
+							</div>
+							<div class="item">
+								<img src="../Image/NamPhuongLinhTu/NamPhuongLinhTu_5.jpg" alt="Nam Phương Linh Từ">
+							</div>
+							<div class="item">
+								<img src="../Image/NamPhuongLinhTu/NamPhuongLinhTu_6.jpg" alt="Nam Phương Linh Từ">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 320.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>01 ngày</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen
+											(Ăn trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV Khám phá Đồng Tháp đón quý khách Sa Đéc đưa đoàn vào viếng Chùa
+													Lá Sen (chùa Phước Kiểng), tham quan Nhà Cổ Huỳnh Thủy Lê – Ông là
+													người tình của Marguerite Duras – Mối tình đó được bà viết nên tiểu
+													thuyết
+													và dựng thành phim Người tình(L’Amant). Tham quan Làng hoa kiểng Sa
+													Đéc – Làng hoa Sa Nhiên đây là một trong những làng hoa kiểng lớn
+													nhất Việt Nam. Quý khách chiêm ngưỡng nhiều loại hoa đẹp và kiểng
+													bonsai
+													có tuổi thọ trên 100 năm.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng bữa trưa tại Sa Đéc với các món ăn đặc sản làm từ rau, củ, quả
+													đặc sản Đồng Tháp.
+												</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Tiếp tục đến KDL Văn hóa Phương Nam – Nam phương Linh từ và Đặng
+													tộc Nam phương Linh từ là một quần thể công trình văn hóa – tâm linh
+													thờ cúng các vị tiền nhân là những người có công khai phá đất phương
+													Nam.
+													Đây còn là nơi tôn vinh, thờ tự 125 nhân vật lịch sử đất phương
+													Nam.
+												</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Quý khách khởi hành trở về Tp Hồ Chí Minh, trên đường về dừng lại
+													Mỹ Hiệp mua đặc sản Đồng Tháp như xoài Cao Lãnh, nhãn Châu Thành,
+													nem Lai Vung…HDV chia tay quý khách.Kết thúc chương trình tham quan
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+									</tr>
+									<tr>
+										<td>430.000</td>
+										<td>370.000</td>
+										<td>340.000</td>
+										<td>335.000</td>
+										<td>325.000</td>
+										<td>320.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Ăn uống: 01 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương.</li>
+										<li>Vé tham quan theo chương trình.</li>
+										<li>Khăn lạnh, nước suối trên đường(1 khăn, 1 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li> Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+										<li>Xe honda ôm vào chùa Lá Sen</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour7" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_5.jpg" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/BaotangDongThap/BaotangDongThap_3.jpg" alt="Bảo tàng Đồng Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_7.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_8.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_9.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_20.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_21.jpg" alt="Xẻo Quýt">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title  subtitle">Xẻo Quýt - Vườn Quốc gia Tràm Chim - Đồng Sen</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 1.000.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>02 ngày 01 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Xẻo Quýt (Ăn trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV đón đoàn tại ngã ba Mỹ Long (cách ngã 3 An Thái Trung 12km) đưa
+													vào tham quan Khu di tích Xẻo Quýt. Tại đây Quý khách được các cô du
+													kích đưa xuồng ba lá đến tham quan các căn hầm bí mật nằm ẩn mình
+													trong
+													khu rừng tràm nguyên sinh – nơi đây từng được chọn quay trong phim
+													Đất Phương Nam. Quý khách có thể tham gia các trò như: bắt vịt, đua
+													xuồng trên sông, giăng lưới bắt cá, dỡ chà cá…(phí tự túc).
+												</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>
+													<div>Dùng cơm trưa tại Nhà hàng Xẻo Quýt với các món ăn đặc sản Đồng
+														Tháp Mười.</div>
+													<div>Quý khách tiếp tục đến TP. Cao Lãnh, nhận phòng khách sạn. Nghỉ
+														ngơi.
+													</div>
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh Sắc(gồm nhà sàn Bác
+													Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng Hòa An xưa – nơi tái
+													hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống trước đây), tham quan
+													Bảo
+													tàng Đồng Tháp (nơi trưng bày di chỉ của nền văn hóa óc –eo và những
+													sinh hoạt văn hóa đặc trưng của nền văn hóa Đồng Bằng Sông Cửu
+													Long). Tham quan chụp hình đường hoa Lý Thường Kiệt với công trình “
+													Sen
+													lên phố thị ”.</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều và nghỉ đêm tại Cao Lãnh. Tối quý khách dạo công
+													viên Văn Miếu, hồ Khổng Tử…
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Vườn Quốc gia Tràm Chim (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Dùng điểm tâm sáng, trả phòng khách sạn. Đoàn khởi hành đi Tràm
+													Chim – Tam Nông.</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Đến Vườn Quốc gia Tràm Chim Tam Nông– đây là Khu Ramsar thứ 2.000
+													của thế giới và thứ 4 của Việt Nam. Vườn Quốc gia có diện tích tự
+													nhiên 7.612 ha, nơi đây có cảnh quan thiên nhiên tuyệt đẹp, thảm
+													thực vật phong
+													phú với hơn 130 loài khác nhau và cũng chính là nơi cư trú của hàng
+													trăm loài động vật có xương sống, hàng chục loài cá và hơn 198 loài
+													chim nước. Quý khách đi tham quan những cánh đồng Sen, Súng, Lúa ma
+													và ngắm những các đàn chim bay lượn trên không. Quý khách lên đài
+													quan sát ngắm toàn cảnh đồng nước bao la của Vườn Quốc gia.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…
+												</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													khởi hành trở về Tp Hồ Chí Minh, ghé mua sắm tại chợ Tam Nông với
+													các đặc sản khô cá lóc, khô rắn… dừng chân tham quan KDL Đồng Sen
+													Tháp Mười.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Quý khách tiếp tục hành trình về Hồ Chí Minh trên tuyến đường N2.
+													Hướng dẫn viên chia tay quý khách. Kết thúc chương trình tham
+													quan.(Chương trình có thể thay đổi trình tự tuỳ theo tình hình tại
+													các điểm tham
+													quan nhưng vẫn đảm bảo đủ chương trình)</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="7">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+										<th>40 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 2 sao</th>
+										<td>1.355.000</td>
+										<td>1.135.000</td>
+										<td>1.135.000</td>
+										<td>1.060.000</td>
+										<td>1.040.000</td>
+										<td>1.025.000</td>
+										<td>1.000.000</td>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>1.480.000</td>
+										<td>1.260.000</td>
+										<td>1.250.000</td>
+										<td>1.185.000</td>
+										<td>1.165.000</td>
+										<td>1.160.000</td>
+										<td>1.135.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Phòng nghỉ Homestay hoặc khách sạn tiêu chuẩn 2-3sao: 2-3-4 khách/phòng</li>
+										<li>Ăn uống: 01 ăn sáng 01 tô + nước uống; Tiêu chuẩn 03 sao buffet tại khách
+											sạn; 03 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Tràm Chim, xuồng ba lá tại Xẻo
+											Quýt.
+										</li>
+										<li>Khăn lạnh, nước suối trên đường(3 khăn, 3 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li> Thuế VAT.</li>
+										<li>Quà tặng: Nón du lịch.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour8" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_6.jpg" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_5.jpg" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_6.jpg" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_13.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_14.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_15.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_16.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_17.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_18.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_28.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_29.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_30.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_31.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_6.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_7.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_13.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_14.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_15.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_16.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_13.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_14.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_15.png" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title  subtitle">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen - Gáo
+								Giồng - Vườn Quốc gia Tràm Chim</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 1.170.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>02 ngày 01 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Sa Đéc (Ăn trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>HDV Khám phá Đồng Tháp đón quý khách Sa Đéc đưa đoàn vào viếng Chùa
+													Lá Sen (chùa Phước Kiểng), tham quan Nhà Cổ Huỳnh Thủy Lê – Ông là
+													người tình của Marguerite Duras – Mối tình đó được bà viết nên tiểu
+													thuyết
+													và dựng thành phim Người tình(L’Amant). Tham quan Làng hoa kiểng Sa
+													Đéc – Làng hoa Sa Nhiên đây là một trong những làng hoa kiểng lớn
+													nhất Việt Nam. Quý khách chiêm ngưỡng nhiều loại hoa đẹp và kiểng
+													bonsai
+													có tuổi thọ trên 100 năm.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>
+													<div>Dùng bữa trưa tại Sa Đéc với các món ăn đặc sản làm từ rau, củ,
+														quả đặc sản Đồng Tháp.
+													</div>
+													<div>Sau khi dùng bữa trưa đoàn di chuyển về Tp Cao Lãnh nhận phòng
+														khách sạn. Nghỉ ngơi.
+													</div>
+												</div>
+												</tr>
+											<li>
+												<div>15h00</div>
+												<div>Quý khách tiếp tục đến Khu Du lịch Sinh thái Gáo Giồng.Bơi xuồng
+													xuyên rừng tràm, tham quan khu vườn chim thiên nhiên gồm nhiều loại
+													chim như: Cò, Vạt, Trích, Le Le, Điên Điển…Lên đài quan sát ngắm
+													toàn
+													cảnh khu sinh thái với thảm thực vật phong phú như: Tràm, sen, Bông
+													Súng , Năng, Sậy. Tại đây quý khách có thể tham gia chương tình tắt
+													mương bắt cá, câu cá giải trí, đạp xe đạp… (phí tự túc).
+												</div>
+											</li>
+											<li>
+												<div>17h30</div>
+												<div>Dùng cơm chiều tại Nhà hàng Gáo Giồng với các món ăn đặc sản Đồng
+													Tháp – thưởng thức chương trình đờn ca tài tử Nam Bộ.</div>
+											</li>
+											<li>
+												<div>19h00</div>
+												<div>Về lại trung tâm TP Cao Lãnh. Tối quý khách dạo công viên Văn Miếu,
+													hồ Khổng Tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Tràm Chim (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Dùng điểm tâm sáng, trả phòng khách sạn. Đoàn khởi hành đi Tràm
+													Chim – Tam Nông. </div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Đến Vườn Quốc gia Tràm Chim Tam Nông– đây là Khu Ramsar thứ 2.000
+													của thế giới và thứ 4 của Việt Nam. Vườn Quốc gia có diện tích tự
+													nhiên 7.612 ha, nơi đây có cảnh quan thiên nhiên tuyệt đẹp, thảm
+													thực vật phong
+													phú với hơn 130 loài khác nhau và cũng chính là nơi cư trú của hàng
+													trăm loài động vật có xương sống, hàng chục loài cá và hơn 198 loài
+													chim nước. Quý khách đi tham quan những cánh đồng Sen, Súng, Lúa ma
+													và ngắm những các đàn chim bay lượn trên không. Quý khách lên đài
+													quan sát ngắm toàn cảnh đồng nước bao la của Vườn Quốc gia.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…
+												</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													khởi hành trở về Tp Hồ Chí Minh, ghé mua sắm tại chợ Tam Nông với
+													các đặc sản khô cá lóc, khô rắn… dừng chân tham quan KDL Đồng Sen
+													Tháp Mười.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Quý khách tiếp tục hành trình về Hồ Chí Minh trên tuyến đường N2.
+													Hướng dẫn viên chia tay quý khách. Kết thúc chương trình tham
+													quan.(Chương trình có thể thay đổi trình tự tuỳ theo tình hình tại
+													các điểm tham
+													quan nhưng vẫn đảm bảo đủ chương trình)</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="6">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+										<th>35 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 2 sao</th>
+										<td>1.420.000</td>
+										<td>1.200.000</td>
+										<td>1.265.000</td>
+										<td>1.200.000</td>
+										<td>1.185.000</td>
+										<td>1.170.000</td>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>1.530.000</td>
+										<td>1.380.000</td>
+										<td>1.320.000</td>
+										<td>1.315.000</td>
+										<td>1.300.000</td>
+										<td>1.285.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Phòng nghỉ Homestay hoặc khách sạn tiêu chuẩn 2-3sao: 2-3-4 khách/phòng</li>
+										<li>Ăn uống: 01 ăn sáng 01 tô + nước uống; Tiêu chuẩn 03 sao buffet tại khách
+											sạn; 03 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Tràm Chim, xuồng ba lá tại Xẻo
+											Quýt.
+										</li>
+										<li>Khăn lạnh, nước suối trên đường(3 khăn, 3 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li> Thuế VAT.</li>
+										<li>Quà tặng: Nón du lịch.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+										<li>Xe honda ôm vào chùa Lá Sen</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="KPDT_tour9" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_8.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_9.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_10.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_16.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_17.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_18.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_19.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_20.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_16.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_17.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_18.png" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Gáo Giồng - Vườn Quốc gia Tràm Chim</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 950.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>02 ngày 01 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Gáo Giồng (Ăn trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>
+													<div>HDV Khám phá Đồng Tháp đón quý khách TP Cao Lãnh tham quan Khu
+														Di tích Cụ Phó bảng Nguyễn Sinh Sắc(gồm nhà sàn Bác Hồ, Khu mộ
+														Cụ Phó bảng Nguyễn Sinh Sắc và Làng Hòa An xưa – nơi tái hiện
+														ngôi làng mà Cụ
+														Nguyễn Sinh Sắc từng sống trước đây)</div>
+													<div>Tiếp tục di chuyển vào KDL Sinh thái Gáo Giồng dùng cơm trưa
+														tại nhà hàng với các món ăn đặc sản Đồng Tháp. Nghỉ ngơi.</div>
+													<div>Bơi xuồng xuyên rừng tràm, tham quan khu vườn chim thiên nhiên
+														gồm nhiều loại chim như: Cò, Vạt, Trích, Le Le, Điên Điển…Lên
+														đài quan sát ngắm toàn cảnh khu sinh thái với thảm thực vật
+														phong phú như: Tràm,
+														sen, Bông Súng , Năng, Sậy…</div>
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Đoàn khởi hành đi Tam Nông, đến Vườn quốc gia Tràm Chim Tam Nông –
+													nơi được công nhận là Khu Ramsar thứ 2.000 của thế giới và thứ 4 của
+													Việt Nam. Quý khách nhận dịch vụ lưu trú, nghỉ ngơi..
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều với các món đặc sản như cá lóc nướng cuốn lá sen
+													non, ốc hấp tiêu, canh chua cá Linh bông điên điển… nhâm nhi vài ly
+													rượu đế và giao lưu đờn ca tài tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Tràm Chim (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Dùng điểm tâm sáng.</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Tham quan Vườn Quốc gia có diện tích tự nhiên 7.612 ha, nơi đây có
+													cảnh quan thiên nhiên tuyệt đẹp, thảm thực vật phong phú với hơn 130
+													loài khác nhau và cũng chính là nơi cư trú của hàng trăm loài động
+													vật
+													có xương sống, hàng chục loài cá và hơn 198 loài chim nước. Quý
+													khách đi tham quan những cánh đồng Sen, Súng, Lúa ma và ngắm những
+													các đàn chim bay lượn trên không. Quý khách lên đài quan sát ngắm
+													toàn cảnh
+													đồng nước bao la của Vườn Quốc gia.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa tại Vườn Quốc Gia.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Đoàn khởi hành trở về Tp Hồ Chí Minh, ghé mua sắm tại chợ Tam Nông
+													với các đặc sản khô cá lóc, khô rắn… dừng chân tham quan KDL Đồng
+													Sen Tháp Mười.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Quý khách tiếp tục hành trình về Hồ Chí Minh trên tuyến đường N2.
+													Hướng dẫn viên chia tay quý khách. Kết thúc chương trình tham
+													quan.(Chương trình có thể thay đổi trình tự tuỳ theo tình hình tại
+													các điểm tham
+													quan nhưng vẫn đảm bảo đủ chương trình)</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="5">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>10 khách</th>
+										<th>15-19 khách</th>
+										<th>20-25 khách</th>
+										<th>30 khách</th>
+									</tr>
+									<tr>
+										<th>Nghỉ đêm homstay Tư Cá Linh</th>
+										<td>1.200.000</td>
+										<td>1.120.000</td>
+										<td>1.020.000</td>
+										<td>980.000</td>
+										<td>950.000</td>
+									</tr>
+									<tr>
+										<th>Nghỉ trong VQG</th>
+										<td>1.380.000</td>
+										<td>1.320.000</td>
+										<td>1.280.000</td>
+										<td>1.270.000</td>
+										<td>1.250.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Lưu trú: Homstay Tư Cá Linh 2-4 người(phòng) ngủ trong VQG Tràm Chim(2-4
+											người/mùng).
+										</li>
+										<li>Ăn uống: 01 ăn sáng 01 tô + nước uống; Tiêu chuẩn 03 sao buffet tại khách
+											sạn; 03 bữa ăn chính thực đơn từ 4-5 món theo ẩm thực địa phương</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Tràm Chim, tàu trung chuyển
+											vào Gáo Giồng(đoàn từ 15 khách trở lên), xuồng ba lá tại Gáo Giồng.</li>
+										<li>Khăn lạnh, nước suối trên đường(3 khăn, 3 chai 500ml/khách).</li>
+										<li>Bảo hiểm du lịch trọn tour(10.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Xe vận chuyển tham quan theo chương trình.</li>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân; đờn ca tài
+											tử.
+										</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em dưới 6 tuổi: Miễn phí dịch vụ.</li>
+										<li>Trẻ em từ 6 đến dưới 11 tuổi: 50% giá dịch vụ.</li>
+										<li>Trẻ em từ 12 tuổi trở lên: Được tính như người lớn.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Phần nội dung tour "Đồng Tháp và miền Tây" -->
+			<section id="tour_DTMT">
+				<h2 class="title">Đồng Tháp và miền Tây</h2>
+				<div class="tour-list">
+					<ul>
+						<li>
+							<span class="tour-list_num">Tour 1</span>
+							<a href="#here" id="DTMT_tour1">
+								<span class="tour-list_name">VQG Tràm Chim - Khu di tích Gò Tháp - Làng hoa Sa
+									Đéc</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 2</span>
+							<a href="#here" id="DTMT_tour2">
+								<span class="tour-list_name">Cần Thơ - Đồng Tháp</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 3</span>
+							<a href="#here" id="DTMT_tour3">
+								<span class="tour-list_name">Cần Thơ - Hà Tiên - Đồng Tháp</span>
+							</a>
+						</li>
+						<li>
+							<span class="tour-list_num">Tour 4</span>
+							<a href="#here" id="DTMT_tour4">
+								<span class="tour-list_name">An Giang - Đồng Tháp - Tiền Giang</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="DTMT_tour1" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_11.jpg" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_17.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_12.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_7.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_8.jpg" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_15.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_21.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_22.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_23.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_24.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_19.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_20.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_21.png" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">VQG Tràm Chim - Khu di tích Gò Tháp - Làng hoa Sa Đéc</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 2.420.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>03 ngày 02 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Gáo Giồng (Ăn trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>Xe và HDV Dong Thap Tourist đón quý khách tại Tp Hồ Chí Minh hoặc
+													Tp Cần Thơ đưa đoàn về Đồng Tháp.
+												</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Quý khách dùng cơm trưa. Đến Tp Cao Lãnh nhận phòng khách sạn. Nghỉ
+													ngơi.
+												</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Quý khách đến Khu Du lịch Sinh thái Gáo Giồng. Bơi xuồng xuyên rừng
+													tràm, tham quan khu vườn chim thiên nhiên gồm nhiều loại chim như:
+													Cò, Vạt, Trích, Le Le, Điên Điển…Lên đài quan sát ngắm toàn cảnh khu
+													sinh
+													thái với thảm thực vật phong phú như: Tràm, sen, Bông Súng , Năng,
+													Sậy. Tại đây quý khách có thể tham gia chương tình tắt mương bắt cá,
+													câu cá giải trí, đạp xe đạp…(phí tự túc).
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều tại Nhà hàng Gáo Giồng với các món ăn đặc sản Đồng
+													Tháp . Quý khách lên xe trở lại Tp. Tối quý khách dạo công viên Văn
+													Miếu, hồ Khổng Tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Tràm Chim - Gò Tháp (Ăn sáng, trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>07h00</div>
+												<div>Ăn sáng tại khách sạn.</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Xe đưa quý khách đến tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh
+													Sắc(gồm nhà sàn Bác Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng
+													Hòa An xưa – nơi tái hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống
+													trước
+													đây).
+												</div>
+											</li>
+											<li>
+												<div>09h00</div>
+												<div>Đến Vườn Quốc gia Tràm Chim Tam Nông– đây là Khu Ramsar thứ 2.000
+													của thế giới và thứ 4 của Việt Nam. Vườn Quốc gia có diện tích tự
+													nhiên 7.612 ha, nơi đây có cảnh quan thiên nhiên tuyệt đẹp, thảm
+													thực vật phong
+													phú với hơn 130 loài khác nhau và cũng chính là nơi cư trú của hàng
+													trăm loài động vật có xương sống, hàng chục loài cá và hơn 198 loài
+													chim nước. Quý khách đi tham quan những cánh đồng Sen, Súng, Lúa ma
+													và ngắm những các đàn chim bay lượn trên không. Quý khách lên đài
+													quan sát ngắm toàn cảnh đồng nước bao la của Vườn Quốc gia.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													tiếp tục tham quan Khu Di Tích Gò Tháp được xếp hạng di tích khảo cổ
+													và kiến trúc nghệ thuật Gò Tháp là di tích quốc gia đặc biệt. Tại
+													đây quý
+													khách tham quan Khu mộ táng với những Di chỉ của nền văn hóa Óc eo,
+													Đền thờ ông Thiên Hộ Dương, Đốc Binh Kiều, Miếu Bà Chúa xứ, tham
+													quan KDL Đồng Sen Tháp Mười.
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Quý khách ăn chiều tại nhà hàng Đầm Sen. Tối quý khách tự do.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 3</span>
+										<span class="day-tour_name">Sa Đéc (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Quý khách ăn sáng tại khách sạn.</div>
+											</li>
+											<li>
+												<div>07h30</div>
+												<div>Đoàn rời Tp Cao Lãnh đi Sa Đéc Sa Đéc tham quan Nhà Cổ Huỳnh Thủy
+													Lê – Ông là người tình của Marguerite Duras – Mối tình đó được bà
+													viết nên tiểu thuyết và dựng thành phim Người tình(L’Amant). Tham
+													quan Làng
+													hoa kiểng Sa Đéc – Làng hoa Sa Nhiên đây là một trong những làng hoa
+													kiểng lớn nhất Việt Nam. Quý khách chiêm ngưỡng nhiều loại hoa đẹp
+													và kiểng bonsai có tuổi thọ trên 100 năm.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món ăn đặc sản được chế biến từ Rau, củ ,
+													quả.
+												</div>
+											</li>
+											<li>
+												<div>12h30</div>
+												<div>Quý khách viếng Chùa Phước Kiểng (hay còn gọi là chùa Lá Sen).
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Khởi hành về lại Tp Hồ Chí Minh hoặc Tp Cần Thơ. Xe và HDV địa
+													phương tiển đoàn và chào tạm biệt. Kết thúc chương trình tham quan.
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="4">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>10 khách</th>
+										<th>15 khách</th>
+										<th>20 khách</th>
+										<th>30 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>2.995.000</td>
+										<td>3.085.000</td>
+										<td>2.420.000</td>
+										<td>2.380.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Vận chuyển: xe chất lượng cao đạt tiêu chuẩn phục vụ khách du lịch.</li>
+										<li>Lưu trú: Khách sạn đạt tiêu chuẩn ***(1 phòng/2-3 khách). Trang thiết bị:
+											Máy điều hoà, tivi, tủ lạnh, điện thoại, nước nóng vệ sinh riêng.</li>
+										<li>Ăn uống theo chương trình: 02 bữa sáng buffet, 05 bữa ăn chính:
+											150.000đ/suất thực đơn từ 4-5 món thay đổi thường xuyên theo ẩm thực địa
+											phương
+										</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Tràm Chim; tàu trung chuyển
+											vào Gáo Giồng.</li>
+										<li>Khăn lạnh, nước suối trên đường(2 khăn, 2 chai 500ml/ngày).</li>
+										<li>Bảo hiểm du lịch trọn tour(20.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân.</li>
+										<li>Phụ thu phòng đơn(nếu có).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Vé máy bay.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em từ 12 tuổi trở lên mua 01 vé.</li>
+										<li>Trẻ em từ 06 đến 11 tuổi mua 1/2 vé: có suất ăn, vé tham quan, ghế ngồi trên
+											xe, bảo hiểm, quà tặng.(Ngủ ghép chung phòng với gia đình, khách sạn có phụ
+											thu gia đình tự thanh toán).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Trẻ em dưới 6 tuổi: Không tính vé, gia đình tự lo cho bé. Hai người lớn chỉ
+											được kèm 01 trẻ em, nếu trẻ em đi kèm nhiều hơn thì từ em thứ 02 trở lên
+											phải mua 1/2 vé.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="DTMT_tour2" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_9.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_10.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_14.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_10.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_11.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_12.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_13.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/GoThap/GoThap_1.jpg" alt="Gò Tháp">
+							</div>
+							<div class="item">
+								<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_7.jpg" alt="Đồng sen Tháp Mười">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_7.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_8.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_22.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_23.jpg" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_24.png" alt="Làng hoa Sa Đéc">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Cần Thơ - Đồng Tháp</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 3.250.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>04 ngày 03 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Cần Thơ</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Xẻo Quýt (Ăn trưa, chiều)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>09h00</div>
+												<div>Xe và HDV Dong Thap Tourist đón quý khách tại Tp Hồ Chí Minh hoặc
+													Tp Cần Thơ khởi hành về Đồng Tháp.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Quý khách ăn trưa.</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>
+													<div>Đến Đồng Tháp quý khách vào tham quan Khu di tích Xẻo Quýt. Tại
+														đây Quý khách được các cô du kích đưa xuồng ba lá đến tham quan
+														các căn hầm bí mật nằm ẩn mình trong khu rừng tràm nguyên sinh –
+														nơi đây từng
+														được chọn quay trong phim Đất Phương Nam. Quý khách có thể tham
+														gia các trò chơi như: bắt vịt, đua xuồng trên sông, giăng lưới
+														bắt cá, dỡ chà cá…(phí tự túc).
+													</div>
+													<div>Tiếp tục đến thành phố Cao Lãnh nhận phòng khách sạn. Nghỉ
+														ngơi.
+													</div>
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Ăn chiều. Tối quý khách dạo công viên Văn Miếu, hồ Khổng Tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Tham quan Đồng Tháp (Ăn sáng, trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>07h00</div>
+												<div>Ăn sáng tại khách sạn sau đó khởi hành Tam Nông, trên đường dừng
+													chân tham quan Trang trại dưa lưới Ecofarm – Thanh Bình.</div>
+											</li>
+											<li>
+												<div>09h00</div>
+												<div>Đến Vườn Quốc gia Tràm Chim Tam Nông– đây là Khu Ramsar thứ 2.000
+													của thế giới và thứ 4 của Việt Nam. Vườn Quốc gia có diện tích tự
+													nhiên 7.612 ha, nơi đây có cảnh quan thiên nhiên tuyệt đẹp, thảm
+													thực vật phong
+													phú với hơn 130 loài khác nhau và cũng chính là nơi cư trú của hàng
+													trăm loài động vật có xương sống, hàng chục loài cá và hơn 198 loài
+													chim nước. Quý khách đi tham quan những cánh đồng Sen, Súng, Lúa ma
+													và ngắm những các đàn chim bay lượn trên không. Quý khách lên đài
+													quan sát ngắm toàn cảnh đồng nước bao la của Vườn Quốc gia.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…
+												</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													tiếp tục tham quan Khu Di Tích Gò Tháp được xếp hạng di tích khảo cổ
+													và kiến trúc nghệ thuật Gò Tháp là di tích quốc gia đặc biệt. Tại
+													đây quý
+													khách tham quan Khu mộ táng với những Di chỉ của nền văn hóa Óc eo,
+													Đền thờ ông Thiên Hộ Dương, Đốc Binh Kiều, Miếu Bà Chúa xứ, tham
+													quan KDL Đồng Sen Tháp Mười.
+												</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Đoàn về lại TP Cao Lãnh, ăn chiều. Tối quý khách dạo công viên Văn
+													Miếu, hồ Khổng Tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 3</span>
+										<span class="day-tour_name">Cao Lãnh - Sa Đéc - Cần Thơ (Ăn sáng, trưa,
+											tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>07h00</div>
+												<div>Quý khách ăn sáng.</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Xe đưa quý khách đến tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh
+													Sắc(gồm nhà sàn Bác Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng
+													Hòa An xưa – nơi tái hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống
+													trước
+													đây).
+												</div>
+											</li>
+											<li>
+												<div>09h00</div>
+												<div>Tiếp tục hành trình đến Tp Sa Đéc tham quan Nhà Cổ Huỳnh Thủy Lê –
+													Ông là người tình của Marguerite Duras – Mối tình đó được bà viết
+													nên tiểu thuyết và dựng thành phim Người tình(L’Amant). Tham quan
+													Làng hoa
+													kiểng Sa Đéc – Làng hoa Sa Nhiên đây là một trong những làng hoa
+													kiểng lớn nhất Việt Nam. Quý khách chiêm ngưỡng nhiều loại hoa đẹp
+													và kiểng bonsai có tuổi thọ trên 100 năm.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa với các món ăn đặc sản.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Quý khách viếng Chùa Phước Kiểng(hay còn gọi là chùa Lá Sen). Khởi
+													hành về Tp Cần Thơ nhận phòng khách sạn, nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều trên du thuyền 3 sao Cần Thơ ngắm cảnh và dạo quanh
+													bến Ninh Kiều. Tối tự do khám phá đất Tây Đô.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 4</span>
+										<span class="day-tour_name">Cần Thơ - Tiễn khách (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Xe đưa quý khách đến bến Ninh Kiều, xuống tàu tham quan chợ nổi Cái
+													Răng xem cảnh sinh họat, buôn bán tấp nập vào sáng sớm với dày đặc
+													những chiếc tàu, thuyền, cảnh chào mời sống động rất hiền hòa của
+													người
+													dân vùng sông nước.Tàu đưa quý khách về lại bến Ninh Kiều xe đón
+													đoàn đưa về khách sạn dùng điểm tâm, trả phòng.</div>
+											</li>
+											<li>
+												<div>09h00</div>
+												<div>Đoàn tiếp tục tham quan KDL Mỹ Khánh, Du khách đi dạo chơi trong
+													một không gian xanh của những vườn mận, xoài, chôm chôm, mít, sầu
+													riêng… Nghe đờn ca tài tử cải lương Nam Bộ. Tham gia làm bánh tráng,
+													nấu rượu
+													đế, thưởng thức những món ngon rất dân dã địa phương. Quý khách dùng
+													cơm trưa tại nhà hàng.
+												</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Quý khách dùng cơm trưa tại KDL Mỹ Khánh.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Xe và HDV địa phương tiển đoàn về Tp Hồ Chí Minh hoặc Tp Cần Thơ và
+													chào tạm biệt. Kết thúc chương trình tham quan.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="4">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>15 khách</th>
+										<th>20 khách</th>
+										<th>30 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>3.500.000</td>
+										<td>3.470.000</td>
+										<td>3.250.000</td>
+										<td>3.200.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Vận chuyển: xe chất lượng cao đạt tiêu chuẩn phục vụ khách du lịch.</li>
+										<li>Lưu trú: Khách sạn đạt tiêu chuẩn ***(1 phòng/2-3 khách). Trang thiết bị:
+											Máy điều hoà, tivi, tủ lạnh, điện thoại, nước nóng vệ sinh riêng.</li>
+										<li>Ăn uống theo chương trình: 03 bữa buffet sáng tại khách sạn, 07 bữa ăn
+											chính: 150.000đ/suất thực đơn từ 4-5 món thay đổi thường xuyên theo ẩm thực
+											địa phương</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Chợ nổi, tàu tham quan Tràm
+											Chim.
+										</li>
+										<li>Khăn lạnh, nước suối trên đường(2 khăn, 2 chai 500ml/ngày).</li>
+										<li>Bảo hiểm du lịch trọn tour (20.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân.</li>
+										<li>Phụ thu phòng đơn(nếu có).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Vé máy bay.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em từ 12 tuổi trở lên mua 01 vé.</li>
+										<li>Trẻ em từ 06 đến 11 tuổi mua 1/2 vé: có suất ăn, vé tham quan, ghế ngồi trên
+											xe, bảo hiểm, quà tặng.(Ngủ ghép chung phòng với gia đình, khách sạn có phụ
+											thu gia đình tự thanh toán).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Trẻ em dưới 6 tuổi: Không tính vé, gia đình tự lo cho bé. Hai người lớn chỉ
+											được kèm 01 trẻ em, nếu trẻ em đi kèm nhiều hơn thì từ em thứ 02 trở lên
+											phải mua 1/2 vé.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="DTMT_tour3" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_25.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_26.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_27.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_14.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_15.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_16.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_9.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_10.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_25.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_26.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_11.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_12.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_13.png" alt="Chùa Phước Kiến">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">Cần Thơ - Hà Tiên - Đồng Tháp</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 3.925.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>05 ngày 04 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>Cần Thơ, Kiên Giang</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Đón khách - Cần Thơ (Ăn chiều)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>13h00</div>
+												<div>Xe và HDV Dong Thap Tourist đón quý khách tại Tp Hồ Chí Minh hoặc
+													Tp Cần Thơ đưa đoàn về trung tâm Tp Cần Thơ nhận phòng khách sạn.
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều trên du thuyền 3 sao Cần Thơ ngắm cảnh và dạo quanh
+													bến Ninh Kiều. Tối tự do khám phá đất Tây Đô.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Cần Thơ - Hà Tiên (Ăn sáng, trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>05h30</div>
+												<div>Xe đưa quý khách đến bến Ninh Kiều, xuống tàu tham quan chợ nổi Cái
+													Răng xem cảnh sinh họat, buôn bán tấp nập vào sáng sớm với dày đặc
+													những chiếc tàu, thuyền, cảnh chào mời sống động rất hiền hòa của
+													người
+													dân vùng sông nước. Tàu đưa quý khách về lại bến Ninh Kiều xe đón
+													đoàn đưa về khách sạn dùng điểm tâm, trả phòng. Đoàn tiếp tục tham
+													quan KDL Mỹ Khánh, Du khách đi dạo chơi trong một không gian xanh
+													của
+													những vườn mận, xoài, chôm chôm, mít, sầu riêng… Nghe đờn ca tài tử
+													cải lương Nam Bộ. Tham gia làm bánh tráng, nấu rượu đế, thưởng thức
+													những món ngon rất dân dã địa phương.</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Quý khách dùng cơm trưa tại nhà hàng.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa tại KDL Núi Cấm. Nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Khởi hành đi Hà Tiên, đến Hà Tiên nhận phòng khách sạn. Xe đưa đoàn
+													tham quan Lăng Mạc Cửu, tham quan Thạch Động – nơi gắng liền với
+													truyền thuyết oai hùng của anh hùng Thạch Sanh.</div>
+											</li>
+											<li>
+												<div>19h00</div>
+												<div>Dùng cơm chiều. Tối quý khách tự do tham quan Chợ Đêm Hà Tiên mua
+													quà lưu niệm. Du thuyền trên sông Đông Hồ nghe đàn ca tài tử…hoặc đi
+													xe lôi tham quan Chùa Tam Bảo, Chùa Lò Gạch về đêm..(chi phí tự
+													túc).
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 3</span>
+										<span class="day-tour_name">Hà Tiên - Châu Đốc (Ăn sáng, trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Dùng điểm tâm, trả phòng khách sạn.</div>
+											</li>
+											<li>
+												<div>07h30</div>
+												<div>Đoàn rời Hà Tiên đến Kiên Lương Quý khách di chuyển lên cano du
+													lịch vượt với thời gian 40 phút vượt biển để đến với Quần đảo Bà
+													Lụa. Ngoạn cảnh và ngắm bình minh trên biển là 01 trải nghiệm không
+													quên dành
+													cho Đoàn. Quý khách sẽ được khám phá Hòn Đầm Dương – nơi được Thiên
+													nhiên ban tặng với rừng, với những rặng dừa, giếng nước ngọt nước
+													quanh năm. Đoàn tự do tắm biển. Tiếp tục chương trình đoàn tham quan
+													02 đầm còn lại của quần thể 03 Hòn Đầm với những chương trình sau:
+													“Săn bắt hải sản”: Đoàn tự tay bắt, “mò” hải sản phong phú tại Hòn
+													Đầm Dương(nghêu, sò, ốc..). Đoàn được trang bị bếp lửa than để tự
+													nướng
+													các “sản phẩm” thu hoạch được.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Đoàn dùng cơm trưa với các món hải sản tươi sống. Quý khách nghỉ
+													ngơi và tự do khám phá Quần đảo Bà Lụa.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Cano du lịch đón Quý khách trở về đất liền. Tạm biệt 03 Hòn Đầm,
+													tạm biệt Quần đảo Bà Lụa với hơn 40 hòn đảo. Quý khách tham quan
+													Chùa Hang – ngắm nhìn Hòn Phụ Tử. Tiếp tục hành trình về TX Châu Đốc
+													nhận phòng
+													khách sạn.</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Quý khách viếng Miếu Bà Chúa Xứ, chùa Tây An, lăng Thoại Ngọc Hầu.
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều. Tối tự do. Nghỉ đêm tại Châu Đốc.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 4</span>
+										<span class="day-tour_name">Châu Đốc - Đồng Tháp (Ăn sáng, trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Quý khách ăn sáng.</div>
+											</li>
+											<li>
+												<div>07h30</div>
+												<div>Đoàn khởi hành về Đồng Tháp, Đến Vườn Quốc gia Tràm Chim Tam Nông–
+													đây là Khu Ramsar thứ 2.000 của thế giới và thứ 4 của Việt Nam. Vườn
+													Quốc gia có diện tích tự nhiên 7.612 ha, nơi đây có cảnh quan thiên
+													nhiên
+													tuyệt đẹp, thảm thực vật phong phú với hơn 130 loài khác nhau và
+													cũng chính là nơi cư trú của hàng trăm loài động vật có xương sống,
+													hàng chục loài cá và hơn 198 loài chim nước. Quý khách đi tham quan
+													những
+													cánh đồng Sen, Súng, Lúa ma và ngắm những các đàn chim bay lượn trên
+													không. Quý khách lên đài quan sát ngắm toàn cảnh đồng nước bao la
+													của Vườn Quốc gia.
+												</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…
+												</div>
+											</li>
+											<li>
+												<div>14h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													tiếp tục tham quan Khu Di Tích Gò Tháp được xếp hạng di tích khảo cổ
+													và kiến trúc nghệ thuật Gò Tháp là di tích quốc gia đặc biệt. Tại
+													đây quý
+													khách tham quan Khu mộ táng với những Di chỉ của nền văn hóa Óc eo,
+													Đền thờ ông Thiên Hộ Dương, Đốc Binh Kiều, Miếu Bà Chúa xứ, tham
+													quan KDL Đồng Sen Tháp Mười.
+												</div>
+											</li>
+											<li>
+												<div>17h00</div>
+												<div>Đoàn về lại TP Cao Lãnh, ăn chiều. Tối quý khách dạo công viên Văn
+													Miếu, hồ Khổng Tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 5</span>
+										<span class="day-tour_name">Cao Lãnh - Sa Đéc - Tiễn khách (Ăn sáng,
+											trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h30</div>
+												<div>Ăn sáng, trả phòng khách sạn.</div>
+											</li>
+											<li>
+												<div>07h30</div>
+												<div>Tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh Sắc(gồm nhà sàn Bác
+													Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng Hòa An xưa – nơi tái
+													hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống trước đây), Tham quan
+													Nhà
+													Cổ Huỳnh Thủy Lê – Ông là người tình của Marguerite Duras – Mối tình
+													đó được bà viết nên tiểu thuyết và dựng thành phim Người
+													tình(L’Amant). Tham quan Làng hoa kiểng Sa Đéc – Làng hoa Sa Nhiên
+													đây là một
+													trong những làng hoa kiểng lớn nhất Việt Nam. Quý khách chiêm ngưỡng
+													nhiều loại hoa đẹp và kiểng bonsai có tuổi thọ trên 100 năm.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa với các món ăn đặc sản được chế biến từ rau , củ ,
+													quả của Đồng Tháp.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Quý khách viếng chùa Phước Kiểng(chùa lá Sen). Xe và HDV địa phương
+													tiển đoàn về Tp Hồ Chí Minh hoặc Tp Cần Thơ và chào tạm biệt. Kết
+													thúc chương trình tham quan.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="4">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>10 khách</th>
+										<th>15 khách</th>
+										<th>20 khách</th>
+										<th>30 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>4.260.000</td>
+										<td>4.250.000</td>
+										<td>3.925.000</td>
+										<td>3.870.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Vận chuyển: xe chất lượng cao đạt tiêu chuẩn phục vụ khách du lịch.</li>
+										<li>Lưu trú: Khách sạn đạt tiêu chuẩn ***(1 phòng/2-3 khách). Trang thiết bị :
+											Máy điều hoà, tivi, tủ lạnh, điện thoại, nước nóng vệ sinh riêng.</li>
+										<li>Ăn uống theo chương trình: 04 bữa buffet sáng tại khách sạn, 08 bữa ăn chính
+											: 150.000đ/suất thực đơn từ 4-5 món thay đổi thường xuyên theo ẩm thực địa
+											phương
+										</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Tràm Chim, xe trung chuyển vào
+											chùa Phước Kiểng; tàu chợ Nổi, Ca nô ra Ba Hòn Đầm.</li>
+										<li>Khăn lạnh, nước suối trên đường(2 khăn, 2 chai 500ml/ngày).</li>
+										<li>Bảo hiểm du lịch trọn tour(50.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân.</li>
+										<li>Phụ thu phòng đơn(nếu có).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Vé máy bay.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em từ 12 tuổi trở lên mua 01 vé.</li>
+										<li>Trẻ em từ 06 đến 11 tuổi mua 1/2 vé: có suất ăn, vé tham quan, ghế ngồi trên
+											xe, bảo hiểm, quà tặng.(Ngủ ghép chung phòng với gia đình, khách sạn có phụ
+											thu gia đình tự thanh toán).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Trẻ em dưới 6 tuổi: Không tính vé, gia đình tự lo cho bé. Hai người lớn chỉ
+											được kèm 01 trẻ em, nếu trẻ em đi kèm nhiều hơn thì từ em thứ 02 trở lên
+											phải mua 1/2 vé.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="DTMT_tour4" class="tour-info">
+					<div class="tour-info__header container container--center">
+						<!-- danh sách các hình ảnh, dùng slick -->
+						<div class="nice single-items">
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_13.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/GaoGiong/GaoGiong_14.png" alt="Gáo Giồng">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_28.jpg" alt="Tràm Chim">
+							</div>
+							<div class="item">
+								<img src="../Image/TramChim/TramChim_29.jpg" alt="Tràm Chim">
+							</div>
+							<img src="../Image/GoThap/GoThap_1.jpg" alt="Gò Tháp">
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_11.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/LangcuPhobang/LangcuPhobang_12.jpg" alt="Lăng cụ Phó bảng">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_11.jpg" alt="Xẻo Quýt">
+							</div>
+							<div class="item">
+								<img src="../Image/XeoQuyt/XeoQuyt_12.jpg" alt="Xẻo Quýt">
+							</div>
+							<img src="../Image/DongsenThapMuoi/DongsenThapMuoi_1.png" alt="Đồng sen Tháp Mười">
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_25.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/LanghoaSaDec/LanghoaSaDec_26.png" alt="Làng hoa Sa Đéc">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_1.jpg" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/ChuaPhuocKien/ChuaPhuocKien_2.png" alt="Chùa Phước Kiến">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_19.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_20.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_21.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+							<div class="item">
+								<img src="../Image/NhacoHuynhThuyLe/NhacoHuynhThuyLe_22.jpg" alt="Nhà cổ Huỳnh Thuỷ Lê">
+							</div>
+						</div>
+						<div class="tour-info__headerRight">
+							<h2 class="tour-title subtitle">An Giang - Đồng Tháp - Tiền Giang</h2>
+							<div>
+								<table>
+									<tr>
+										<td>Giá:</td>
+										<td>Chỉ từ 4.320.000 đ/Khách</td>
+									</tr>
+									<tr>
+										<td>Thời gian:</td>
+										<td>05 ngày 04 đêm</td>
+									</tr>
+									<tr>
+										<td>Phương tiện:</td>
+										<td>Bằng xe</td>
+									</tr>
+									<tr>
+										<td>Điểm khởi hành:</td>
+										<td>Đồng Tháp</td>
+									</tr>
+									<tr>
+										<td>Điểm đến:</td>
+										<td>An Giang, Tiền Giang</td>
+									</tr>
+									<tr>
+										<td>Ngày khởi hành:</td>
+										<td>00/00/2020</td>
+									</tr>
+									<tr>
+										<td>Ngày về:</td>
+										<td>00/00/2020</td>
+									</tr>
+								</table>
+							</div>
+							<div><input type="submit" value="Đặt tour" id="bookTour" class="input__submit"></div>
+						</div>
+					</div>
+					<div class="tour-info__body tabs">
+						<ul class="container container--row tab-title">
+							<li>
+								<a href="#tour-program">Chương trình tour</a>
+							</li>
+							<li>
+								<a href="#tour-price">Chi tiết giá</a>
+							</li>
+							<li>
+								<a href="#tour-rule">Điều khoản</a>
+							</li>
+						</ul>
+						<div class="tab-content ">
+							<div id="tour-program" class="tab">
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 1</span>
+										<span class="day-tour_name">Đón khách - Châu Đốc (Ăn trưa, chiều)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>08h00</div>
+												<div>Xe và HDV Dong Thap Tourist đón quý khách tại Tp Hồ Chí Minh hoặc
+													Tp Cần Thơ khởi hành đi An Giang.
+												</div>
+											</li>
+											<li>
+												<div>12h30</div>
+												<div>Đến Tp Long Xuyên dùng cơm trưa. Tiếp tục hành trình đến Tx Châu
+													Đốc nhận phòng khách sạn. Nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Quý khách viếng Miếu Bà Chúa Xứ, chùa Tây An, lăng Thoại Ngọc Hầu.
+													Tiếp tục đến tham quan Thánh Đường Mubarak- làng của của người Chăm
+													– tham quan nghề dệt khăn choàng với những nét hoa văn tinh tế, đẹp
+													mắt.
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Dùng cơm chiều. Tối tự do. Nghỉ đêm tại Châu Đốc.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 2</span>
+										<span class="day-tour_name">Châu Đốc - Núi Cấm - Cao Lãnh (Ăn sáng, trưa,
+											tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>07h00</div>
+												<div>Quý khách trả phòng, ăn sáng.</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Tham quan mua sắm đặc sản chợ Châu Đốc. Tiếp tục đến tham quan KDL
+													Thất Sơn – Núi Cấm, quý khách ngắm phong cảnh Bảy Núi, ghé Châu
+													Lăng-Xà Tón, thưởng thức hương vị trái thốt nốt hái tại nhà vườn.
+													Đến Núi Cấm,
+													đoàn chinh phục Núi Cấm bằng cáp treo viếng Chùa Vạn Linh, Chùa Phật
+													Lớn, nơi có tượng phật Di Lạc cao 32m.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa tại KDL Núi Cấm. Nghỉ ngơi.</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Đoàn khởi hành về Tp Cao Lãnh – Đồng Tháp nhận phòng. Nghỉ ngơi.
+												</div>
+											</li>
+											<li>
+												<div>18h00</div>
+												<div>Quý khách ăn chiều tại nhà hàng Đầm Sen. Tối quý khách tự do.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 3</span>
+										<span class="day-tour_name">Tham quan Đồng Tháp (Ăn sáng, trưa, tối)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>07h00</div>
+												<div>Ăn sáng tại khách sạn sau đó khởi hành Tam Nông, trên đường dừng
+													chân tham quan.</div>
+											</li>
+											<li>
+												<div>09h00</div>
+												<div>Đến Vườn Quốc gia Tràm Chim Tam Nông – đây là Khu Ramsar thứ 2.000
+													của thế giới và thứ 4 của Việt Nam. Vườn Quốc gia có diện tích tự
+													nhiên 7.612 ha, nơi đây có cảnh quan thiên nhiên tuyệt đẹp, thảm
+													thực vật
+													phong phú với hơn 130 loài khác nhau và cũng chính là nơi cư trú của
+													hàng trăm loài động vật có xương sống, hàng chục loài cá và hơn 198
+													loài chim nước. Quý khách đi tham quan những cánh đồng Sen, Súng,
+													Lúa ma và ngắm những các đàn chim bay lượn trên không. Quý khách lên
+													đài quan sát ngắm toàn cảnh đồng nước bao la của Vườn Quốc gia.
+												</div>
+											</li>
+											<li>
+												<div>11h30</div>
+												<div>Dùng cơm trưa với các món đặc sản của Đồng Tháp như: cá lóc nướng
+													trui cuốn lá sen, ốc hấp tiêu…
+												</div>
+											</li>
+											<li>
+												<div>13h00</div>
+												<div>Tàu đưa quý khách trở lại Trung tâm Điều hành của Vườn Quốc Gia,
+													tiếp tục tham quan Khu Di Tích Gò Tháp được xếp hạng di tích khảo cổ
+													và kiến trúc nghệ thuật Gò Tháp là di tích quốc gia đặc biệt. Tại
+													đây quý
+													khách tham quan Khu mộ táng với những Di chỉ của nền văn hóa Óc eo,
+													Đền thờ ông Thiên Hộ Dương, Đốc Binh Kiều, Miếu Bà Chúa xứ, tham
+													quan KDL Đồng Sen Tháp Mười.
+												</div>
+											</li>
+											<li>
+												<div>16h00</div>
+												<div>Đoàn về lại TP Cao Lãnh, ăn chiều. Tối quý khách dạo công viên Văn
+													Miếu, hồ Khổng Tử…</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 4</span>
+										<span class="day-tour_name">Cao Lãnh - Sa Đéc (Ăn sáng, trưa, chiều)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>07h00</div>
+												<div>Quý khách ăn sáng.</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Xe đưa quý khách đến tham quan Khu Di tích Cụ Phó bảng Nguyễn Sinh
+													Sắc(gồm nhà sàn Bác Hồ, Khu mộ Cụ Phó bảng Nguyễn Sinh Sắc và Làng
+													Hòa An xưa – nơi tái hiện ngôi làng mà Cụ Nguyễn Sinh Sắc từng sống
+													trước
+													đây),Đến Khu Du lịch Sinh thái Gáo Giồng. Bơi xuồng xuyên rừng tràm,
+													tham quan khu vườn chim thiên nhiên gồm nhiều loại chim như: Cò,
+													Vạt, Trích, Le Le, Điên Điển…Lên đài quan sát ngắm toàn cảnh khu
+													sinh
+													thái với thảm thực vật phong phú như: Tràm, sen, Bông Súng , Năng,
+													Sậy.
+												</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa tại Nhà hàng Gáo Giồng. Đoàn rời Tp Cao Lãnh đi Sa
+													Đéc Sa Đéc nhận phòng. Nghỉ ngơi.
+												</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Tham quan Nhà Cổ Huỳnh Thủy Lê – Ông là người tình của Marguerite
+													Duras – Mối tình đó được bà viết nên tiểu thuyết và dựng thành phim
+													Người tình(L’Amant). Tham quan Làng hoa kiểng Sa Đéc – Làng hoa Sa
+													Nhiên
+													đây là một trong những làng hoa kiểng lớn nhất Việt Nam. Quý khách
+													chiêm ngưỡng nhiều loại hoa đẹp và kiểng bonsai có tuổi thọ trên 100
+													năm.
+												</div>
+											</li>
+											<li>
+												<div>19h00</div>
+												<div>Dùng cơm chiều với các món ăn đặc sản được chế biến từ Rau, củ ,
+													quả. Tối tự do. Nghỉ đêm tại Sa Đéc.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="day-tour_title">
+										<span class="day-tour_num">Ngày 5</span>
+										<span class="day-tour_name">Sa Đéc - Tiền Giang - Tiễn khách (Ăn sáng,
+											trưa)</span>
+									</h3>
+									<a href="#here" class="more">Xem thêm<i class="fa fa-chevron-circle-down"></i></a>
+									<div class="day-tour_content">
+										<ul>
+											<li>
+												<div>06h00</div>
+												<div>Ăn sáng, trả phòng khởi hành về Tp Hồ Chí. Quý khách viếng Chùa
+													Phước Kiểng (hay còn gọi là chùa Lá Sen).</div>
+											</li>
+											<li>
+												<div>08h00</div>
+												<div>Đến Tp Mỹ Tho – Tiền Giang lên tàu du lịch sông Tiền, ngắm cảnh bốn
+													cù lao Long, Lân, Qui, Phụng. Thuyền chạy dọc theo bè cá nổi để du
+													khách tìm hiểu cách nuôi cá trên sông của người dân địa phương và
+													ngắm nhìn
+													cầu Rạch Miễu. Đi thuyền vào Rạch Xếp, tham quan mô hình nhà truyền
+													thống của Nam Bộ bằng dừa, xem bộ sưu tập về chủ đề cây dừa và các
+													mặt hàng thủ công mỹ nghệ. Thưởng thức trái cây và nghe đờn ca tài
+													tử
+													Nam Bộ tại điểm du lịch Quới An. Đi xe ngựa hoặc xe lôi trên đường
+													làng Quới Sơn. Đến điểm du lịch Bến Trúc, tham quan trại nuôi ong
+													mật, thưởng thức trà mật ong chanh. Sau đó dùng đò chèo len lỏi vào
+													rạch
+													nhỏ ngắm nhìn 2 hàng dừa nước thiên nhiên và phong cảnh đơn sơ của
+													miệt vườn.</div>
+											</li>
+											<li>
+												<div>12h00</div>
+												<div>Dùng cơm trưa tại nhà hàng trên cù lao, tản bộ và tìm hiểu về Đạo
+													Dừa tại Bến Tre.</div>
+											</li>
+											<li>
+												<div>15h00</div>
+												<div>Xe và HDV địa phương tiển đoàn về Tp Hồ Chí Minh hoặc Tp Cần Thơ và
+													chào tạm biệt. Kết thúc chương trình tham quan.</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div id="tour-price" class="tour-price tab">
+								<table>
+									<caption>
+										<ul>
+											<li>Giá tour/khách</li>
+											<li>Đơn vị tính: VNĐ</li>
+										</ul>
+									</caption>
+									<tr>
+										<th rowspan="2">Tiêu chuẩn</th>
+										<th colspan="4">Nhóm khách</th>
+									</tr>
+									<tr>
+										<th>5 khách</th>
+										<th>15 khách</th>
+										<th>20 khách</th>
+										<th>30 khách</th>
+									</tr>
+									<tr>
+										<th>Khách sạn 3 sao</th>
+										<td>3.500.000</td>
+										<td>3.470.000</td>
+										<td>3.250.000</td>
+										<td>3.200.000</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="tour-rule" class="tour-rule tab">
+								<section class="content">
+									<h3 class="heading">Giá bao gồm:</h3>
+									<ul>
+										<li>Vận chuyển: xe chất lượng cao đạt tiêu chuẩn phục vụ khách du lịch.</li>
+										<li>Lưu trú: Khách sạn đạt tiêu chuẩn ***(1 phòng/2-3 khách). Trang thiết bị:
+											Máy điều hoà, tivi, tủ lạnh, điện thoại, nước nóng vệ sinh riêng.</li>
+										<li>Ăn uống theo chương trình: 03 bữa buffet sáng tại khách sạn, 07 bữa ăn
+											chính: 150.000đ/suất thực đơn từ 4-5 món thay đổi thường xuyên theo ẩm thực
+											địa phương</li>
+										<li>Vé tham quan theo chương trình, tàu tham quan Chợ nổi, tàu tham quan Tràm
+											Chim.
+										</li>
+										<li>Khăn lạnh, nước suối trên đường(2 khăn, 2 chai 500ml/ngày).</li>
+										<li>Bảo hiểm du lịch trọn tour (20.000.000đ/ người/ trường hợp).</li>
+										<li>Hướng dẫn viên chuyên nghiệp, nhiệt tình, vui vẻ.</li>
+										<li>Thuế VAT</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá không bao gồm:</h3>
+									<ul>
+										<li>Ăn uống ngoài chương trình, chi phí vui chơi giải trí cá nhân.</li>
+										<li>Phụ thu phòng đơn(nếu có).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Vé máy bay.</li>
+									</ul>
+								</section>
+								<section class="content">
+									<h3 class="heading">Giá vé trẻ em:</h3>
+									<ul>
+										<li>Trẻ em từ 12 tuổi trở lên mua 01 vé.</li>
+										<li>Trẻ em từ 06 đến 11 tuổi mua 1/2 vé: có suất ăn, vé tham quan, ghế ngồi trên
+											xe, bảo hiểm, quà tặng.(Ngủ ghép chung phòng với gia đình, khách sạn có phụ
+											thu gia đình tự thanh toán).</li>
+										<li>Đờn ca tài tử, dịch vụ tại các khu du lịch.</li>
+										<li>Trẻ em dưới 6 tuổi: Không tính vé, gia đình tự lo cho bé. Hai người lớn chỉ
+											được kèm 01 trẻ em, nếu trẻ em đi kèm nhiều hơn thì từ em thứ 02 trở lên
+											phải mua 1/2 vé.</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- PHẦN CHÂN TRANG -->
+		<footer id="footer">
+			<section class="content">
+				<h3 class="subtitle">
+					<a href="../html/contactpage.html" id="contactpage">
+						Trung tâm điều hành du lịch
+					</a>
+				</h3>
+				<div>
+					<ul>
+						<li>
+							<span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+							<a href="https://goo.gl/maps/DGXfekjrAy2urJcc7" target="_blank">
+								04, Đốc Binh Kiều, P2, TP. Cao Lãnh, Đồng Tháp
+							</a>
+						</li>
+						<li>
+							<span><i class="fa fa-phone"></i>Điện thoại:</span>
+							<a href="tel:+02773873026">0277.3873.026</a>
+						</li>
+						<li>
+							<span><i class="fa fa-fax"></i>Fax:</span>
+							<a href="tel:+02773855744">0277.3855.744</a>
+						</li>
+						<li>
+							<span><i class="fa fa-envelope"></i>Email:</span>
+							<a href="mailto:ttdhdldongthap@gmail.com">ttdhdldongthap@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="content">
+				<h3 class="subtitle">
+					<a href="../html/hotelpage.html#hotel_SaoMai">
+						Khách sạn Sao Mai
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+					</a>
+				</h3>
+				<div>
+					<ul>
+						<li>
+							<span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+							<a href="https://goo.gl/maps/ATDvbJ3vbtG5mmqd9" target="_blank">
+								178, Nguyễn Huệ, P2, TP. Cao Lãnh, Đồng Tháp
+							</a>
+						</li>
+						<li>
+							<span><i class="fa fa-phone"></i>Điện thoại:</span>
+							<a href="tel:+02776268268">0277.6268.268</a>
+						</li>
+						<li>
+							<span><i class="fa fa-fax"></i>Fax:</span>
+							<a href="tel:+"></a>
+						</li>
+						<li>
+							<span><i class="fa fa-envelope"></i>Email:</span>
+							<a href="mailto:dtsaomaihotel@gmail.com">dtsaomaihotel@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="content">
+				<h3 class="subtitle">
+					<a href="../html/hotelpage.html#hotel_BongHong">
+						Khách sạn Bông Hồng
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+					</a>
+				</h3>
+				<div>
+					<ul>
+						<li>
+							<span><i class="fa fa-map-marker"></i>Địa chỉ:</span>
+							<a href="https://goo.gl/maps/bXRbLBDyXJe4dPjz9" target="_blank">
+								251A, Nguyễn Sinh Sắc, P2, TP. Sa Đéc, Đồng Tháp
+							</a>
+						</li>
+						<li>
+							<span><i class="fa fa-phone"></i>Điện thoại:</span>
+							<a href="tel:+02773868288">0277.3868.288</a>
+						</li>
+						<li>
+							<span><i class="fa fa-fax"></i>Fax:</span>
+							<a href="tel:+02773868289">0277.3868.289</a>
+						</li>
+						<li>
+							<span><i class="fa fa-envelope"></i>Email:</span>
+							<a href="mailto:bonghonghotelsadec@gmail.com">bonghonghotelsadec@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</footer>
+
+		<aside class="asideRight">
+			<form name="book" action="#" method="POST" onsubmit="return check()">
+				<fieldset>
+					<legend class="subtitle bold">Thông tin liên lạc</legend>
+					<label>
+						Họ tên (<span class="star">*</span>)
+					</label>
+					<input name="ten" class="" id="fullName" type="text" placeholder="Nguyễn Văn A" minlength="10"
+						maxlength="50" />
+					<label>Điện thoại (<span class="star">*</span>)</label>
+					<input name="dt" class="" id="numberPhone" type="text" placeholder="0892691150" minlength="10"
+						maxlength="10" />
+					<label>Địa chỉ (<span class="star">*</span>)</label>
+					<input name="address" class="" id="address" type="text"
+						placeholder="26/44 đường số 7, phường 3, Gò Vấp, TPHCM" maxlength="50" />
+					<label>Số khách (<span class="star">*</span>)</label>
+					<input class="" id="guest" required="required" type="number" min="4" placeholder="Từ 4 khách trở lên" />
+					<label>Tour (<span class="star">*</span>)</label>
+					<select name="tour" id="tour">
+						<option value="1" id="DTMNN_tour1" selected="selected">Khu du lịch sinh thái Gáo Giồng - Vườn
+							Quốc gia Tràm
+							Chim</option>
+						<option value="2" id="DTMNN_tour2">Vườn quốc gia Tràm Chim - Làng hoa Sa Đéc</option>
+						<option value="3" id="KPDT_tour1">Xẻo Quýt - Lăng cụ Phó bảng Nguyễn Sinh Sắc</option>
+						<option value="4" id="KPDT_tour2">Làng hoa Sa Đéc - Vườn xoài Mỹ Xương - Vườn trái cây Mỹ Nữ
+						</option>
+						<option value="5" id="KPDT_tour3">Xẻo Quýt - Gò Tháp - Đồng Sen</option>
+						<option value="6" id="KPDT_tour4">Lăng cụ Phó bảng Nguyễn Sinh Sắc - Gáo Giồng</option>
+						<option value="7" id="KPDT_tour5">Vườn Quốc gia Tràm Chim - Đồng Sen</option>
+						<option value="8" id="KPDT_tour6">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen</option>
+						<option value="9" id="KPDT_tour7">Xẻo Quýt - Vườn Quốc gia Tràm Chim - Đồng Sen</option>
+						<option value="10" id="KPDT_tour8">Làng hoa Sa Đéc - Nhà cổ Huỳnh Thuỷ Lê - Chùa Lá sen - Gáo
+							Giồng - Vườn
+							Quốc gia Tràm Chim</option>
+						<option value="11" id="KPDT_tour9">Gáo Giồng - Vườn Quốc gia Tràm Chim</option>
+						<option value="12" id="DTMT_tour1">VQG Tràm Chim - Khu di tích Gò Tháp - Làng hoa Sa Đéc
+						</option>
+						<option value="13" id="DTMT_tour2">Cần Thơ - Đồng Tháp</option>
+						<option value="14" id="DTMT_tour3">Cần Thơ - Hà Tiên - Đồng Tháp</option>
+						<option value="15" id="DTMT_tour4">An Giang - Đồng Tháp - Tiền Giang</option>
+					</select>
+					<label>Ngày khởi hành (<span class="star">*</span>)</label>
+					<input class="" id="checkIn" required="required" type="date" value="2020-12-31" min="2020-08-22" />
+					<label>Ghi chú</label>
+					<textarea class="" id="note" rows="3" placeholder="Nhập ghi chú tại đây"></textarea>
+					<button type="submit">Đặt ngay</button>
+				</fieldset>
+
+			</form>
+		</aside>
+
+		<!-- NÚT TRƯỢT GO TO TOP -->
+		<section class="go-to-top" id="go-to-top">
+			<a href="#">
+				<i class="fa fa-angle-double-up"></i>
+			</a>
+		</section>
+	</body>
+
+</html>
